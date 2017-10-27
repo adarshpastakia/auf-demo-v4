@@ -1,0 +1,46 @@
+<template>
+  <compose view="../glyphs/icomoon.svg"></compose>
+  <compose view="../glyphs/hawcons-linear.svg"></compose>
+  <compose view="../glyphs/hawcons-filled.svg"></compose>
+
+  <ui-drawer ref="appDrawer" close-on-click>
+    <ul>
+      <li>
+        <a href="/viewport">Viewport</a>
+      </li>
+      <li>
+        <a href="/page">Page</a>
+      </li>
+      <li>
+        <a href="/grid">Responsive Grid</a>
+      </li>
+      <li>
+        <a href="/buttons">Buttons</a>
+      </li>
+    </ul>
+  </ui-drawer>
+
+  <ui-viewport>
+    <div class="x-fixed-banner">V4 Work in Progress!!</div>
+    <ui-app-header>
+      <ui-drawer-toggle drawer.bind="appDrawer"></ui-drawer-toggle>
+      <ui-app-title class="${router.currentInstruction.fragment=='/'?'x-hide':''}" src="examples/images/logo.png">${constants.Title}</ui-app-title>
+    </ui-app-header>
+
+    <ui-router-view></ui-router-view>
+
+    <ui-app-footer>
+      <span>&copy; 2017, Adarsh Pastakia<br/><small>Version ${constants.Version}</small></span>
+      <div>
+        <a class="ui-link ui-hover-warning" href="#" css.bind="{fontSize: '2rem'}">
+          <ui-glyph glyph="icon-moon-stackoverflow"></ui-glyph>
+        </a>
+        <span css.bind="{fontSize: '2rem'}">&nbsp;&nbsp;</span>
+        <a class="ui-link ui-hover-info" href="#" css.bind="{fontSize: '2rem'}">
+          <ui-glyph glyph="icon-moon-github"></ui-glyph>
+        </a>
+        <span css.bind="{fontSize: '2rem'}">&nbsp;&nbsp;</span>
+      </div>
+    </ui-app-footer>
+  </ui-viewport>
+</template>

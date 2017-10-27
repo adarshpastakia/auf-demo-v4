@@ -1,0 +1,138 @@
+//
+// @description :
+// @author      : Adarsh Pastakia
+// @copyright   : 2017
+// @license     : MIT
+@import "node_modules/aurelia-ui-framework/sass/framework";
+@import "./hljs";
+
+.x-home-page {
+  &:before {
+    content   : '';
+    position  : absolute;
+    left      : 0;
+    right     : 0;
+    height    : 10em;
+    background: $primary;
+  }
+}
+
+.x-fixed-banner {
+  position     : fixed;
+  color        : white;
+  font-weight  : bold;
+  background   : $danger;
+  padding      : 0.25rem 1rem;
+  left         : 50%;
+  top          : 0;
+  border-radius: 0 0 0.5em 0.5em;
+  @include transform(translateX(-50%));
+}
+
+.x-view {
+  border : 1px solid #e5e5e5;
+  height : 400px;
+  display: flex;
+
+  h6 {
+    color      : $secondary;
+    font-size  : 2em;
+    margin-top : 1em;
+    font-weight: 300;
+  }
+}
+
+.x-cards p {
+  font-size : 0.8em;
+  text-align: center;
+  color     : $gray;
+}
+
+.x-banner {
+  color: $white;
+
+  .big-button {
+    border    : 1px solid rgba(#f0f0f0, .3);
+    padding   : 1em 2em;
+    margin    : 0 1em 1em;
+    min-width : 12em;
+    color     : white;
+    text-align: center;
+    display   : inline-block;
+
+    &:hover {
+      text      : white;
+      background: $primary;
+    }
+  }
+}
+
+.ui-app-title {
+  @include transition(transform .2s .5s);
+
+  &.x-hide {
+    @include transform(translateY(-100%));
+  }
+}
+
+.ui-drawer {
+  > .ui-drawer-content {
+    box-shadow: none !important;
+  }
+
+  & ~ .ui-viewport {
+    @include transition(transform .5s);
+  }
+
+  &.show ~ .ui-viewport {
+    @include transform(translateX($drawer-width));
+  }
+}
+
+.x-title {
+  color      : $secondary;
+  margin     : 1em 0 0.5em !important;
+  font-weight: 400;
+}
+
+.x-tab {
+  padding    : 6px 12px;
+  margin     : 6px 0;
+  font-size  : 24px;
+  line-height: 1;
+  cursor     : pointer;
+  color      : $secondary;
+}
+
+.x-tab-active {
+  background: $secondary;
+  color     : $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.x-section h4 {
+  color : $secondary;
+  margin: 1em 0 0.5em !important;
+}
+
+.x-section blockquote {
+  background: rgba($danger, .05);
+
+  p:last-child {
+    margin-bottom: 0.25em;
+
+    strong:first-child {
+      color: $danger;
+    }
+  }
+}
+
+.page-404 {
+  min-height     : 250px;
+  padding        : 50px 0 50px 180px;
+  background     : url('../images/working.png') no-repeat 25px 50px;
+  background-size: auto 120px;
+}

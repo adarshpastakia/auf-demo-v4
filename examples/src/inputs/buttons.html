@@ -1,0 +1,124 @@
+<!--
+// @author      : Adarsh Pastakia
+// @copyright   : 2017
+// @license     : MIT
+-->
+<template>
+  <ui-page animate>
+    <x-container source.bind="source" wiki.bind="wiki" page-title="UIButton">
+      <h4 class="x-title">Themes</h4>
+      <ui-row class="ui-titlecase">
+        <ui-button width="8em" repeat.for="c of themes" theme.bind="c">${c}</ui-button>
+      </ui-row>
+      <h6 class="x-title">Extras</h6>
+      <ui-row class="ui-titlecase">
+        <ui-button width="8em" repeat.for="c of colors" theme.bind="c">${c}</ui-button>
+      </ui-row>
+
+      <hr/>
+      <h4 class="x-title">Variations</h4>
+      <h6 class="x-title">Sizes</h6>
+      <ui-row bottom class="x-cards">
+        <ui-column>
+          <ui-button small>Click</ui-button>
+          <p>small</p>
+        </ui-column>
+        <ui-column>
+          <ui-button normal>Click</ui-button>
+          <p>normal</p>
+        </ui-column>
+        <ui-column>
+          <ui-button large>Click</ui-button>
+          <p>large</p>
+        </ui-column>
+        <ui-column>
+          <ui-button xlarge>Click</ui-button>
+          <p>xlarge</p>
+        </ui-column>
+      </ui-row>
+
+      <h6 class="x-title">Icons</h6>
+      <ui-row middle class="x-cards">
+        <ui-column>
+          <ui-button glyph="glyph-icon-page"></ui-button>
+          <p>only glyph</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page">Click</ui-button>
+          <p>glyph</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page">Click</ui-button>
+          <p>icon-start</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page" icon-end>Click</ui-button>
+          <p>icon-end</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page" icon-hilight>Click</ui-button>
+          <p>icon-hilight</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page" icon-hilight icon-end>Click</ui-button>
+          <p>icon-hilight</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page" icon-top>Click</ui-button>
+          <p>icon-top</p>
+        </ui-column>
+      </ui-row>
+
+      <h6 class="x-title">Other Variants</h6>
+      <ui-row middle class="x-cards">
+        <ui-column>
+          <ui-button glyph="glyph-icon-page" dropdown="s" theme="indigo" split-theme="gray">Click</ui-button>
+          <p>dropdown</p>
+        </ui-column>
+        <ui-column>
+          <ui-button glyph="glyph-icon-page" split theme="teal" split-theme="gray">Click</ui-button>
+          <p>split</p>
+        </ui-column>
+        <ui-column>
+          <ui-button-group separator="or">
+            <ui-button success width="">Proceed</ui-button>
+            <ui-button info width="">Recheck</ui-button>
+            <ui-button danger width="">Cancel</ui-button>
+          </ui-button-group>
+          <p>grouped with separator</p>
+        </ui-column>
+      </ui-row>
+
+      <h4 class="x-title">Button Groups</h4>
+      <ui-row middle class="x-cards">
+        <ui-column>
+          <ui-button-group>
+            <ui-button secondary>Grouped</ui-button>
+            <ui-button success>Grouped</ui-button>
+            <ui-button warning>Grouped</ui-button>
+            <ui-button danger>Grouped</ui-button>
+          </ui-button-group>
+          <p>horizontal</p>
+        </ui-column>
+        <ui-column>
+          <ui-button-group vertical>
+            <ui-button secondary>Grouped</ui-button>
+            <ui-button success>Grouped</ui-button>
+            <ui-button warning>Grouped</ui-button>
+            <ui-button danger>Grouped</ui-button>
+          </ui-button-group>
+          <p>vertical</p>
+        </ui-column>
+        <ui-column>
+          <ui-button-group value="1" toggle>
+            <ui-button value="0" secondary>Grouped</ui-button>
+            <ui-button value="1" success>Grouped</ui-button>
+            <ui-button value="2" warning>Grouped</ui-button>
+            <ui-button value="3" danger>Grouped</ui-button>
+          </ui-button-group>
+          <p>toggle</p>
+        </ui-column>
+      </ui-row>
+    </x-container>
+  </x-page>
+</template>
