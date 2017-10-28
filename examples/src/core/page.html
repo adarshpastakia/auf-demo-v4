@@ -10,10 +10,67 @@
       <div class="x-view">
         <ui-page page-title="My Title">
           <ui-content padded scroll>
-            <h6> Page content goes here</h6>
+            <compose view="../home/lipsum-big.html"></compose>
           </ui-content>
         </ui-page>
       </div>
+
+      <h4 class="x-title">Page w/ Sidebar</h4>
+      <div class="x-view">
+        <ui-page page-title="My Title">
+          <ui-section row-layout>
+            <ui-sidebar collapsible label="Sidebar" padded scroll>
+              <compose view="../home/lipsum-small.html"></compose>
+            </ui-sidebar>
+            <ui-content padded scroll>
+              <compose view="../home/lipsum-small.html"></compose>
+            </ui-content>
+            <ui-sidebar position="end" collapsible label="Sidebar" padded scroll>
+              <compose view="../home/lipsum-small.html"></compose>
+            </ui-sidebar>
+          </ui-section>
+        </ui-page>
+      </div>
+
+      <h4 class="x-title">Page w/ Toolbar</h4>
+      <div class="x-view">
+        <ui-page page-title="My Title">
+          <ui-section column-layout>
+            <ui-content padded scroll>
+              <compose view="../home/lipsum-big.html"></compose>
+            </ui-content>
+            <ui-row end middle class="ui-bg-light">
+              <ui-button dark>Save</ui-button>
+              <ui-button>Cancel</ui-button>
+            </ui-row>
+          </ui-section>
+        </ui-page>
+      </div>
+
+      <h4 class="x-title">Page w/ multiple sections</h4>
+      <div class="x-view">
+        <ui-page page-title="My Title">
+          <ui-section column-layout>
+            <ui-section row-layout>
+              <ui-sidebar collapsible label="Sidebar" padded scroll>
+                <compose view="../home/lipsum-small.html"></compose>
+              </ui-sidebar>
+              <ui-content padded scroll>
+                <compose view="../home/lipsum-small.html"></compose>
+              </ui-content>
+              <ui-sidebar position="end" collapsible label="Sidebar" padded scroll>
+                <compose view="../home/lipsum-small.html"></compose>
+              </ui-sidebar>
+            </ui-section>
+            <ui-row end middle class="ui-bg-light">
+              <ui-button dark>Save</ui-button>
+              <ui-button>Cancel</ui-button>
+            </ui-row>
+          </ui-section>
+        </ui-page>
+      </div>
+
+      <br/><br/>
     </x-container>
   </x-page>
 </template>

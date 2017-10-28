@@ -13,7 +13,7 @@
     left      : 0;
     right     : 0;
     height    : 10em;
-    background: $primary;
+    background: $app-header-bg;
   }
 }
 
@@ -50,6 +50,7 @@
 
 .x-banner {
   color: $white;
+  background: $app-header-bg;
 
   .big-button {
     border    : 1px solid rgba(#f0f0f0, .3);
@@ -68,9 +69,10 @@
 }
 
 .ui-app-title {
-  @include transition(transform .2s .5s);
+  @include transition(transform .2s .2s);
 
   &.x-hide {
+    @include transition(transform .2s .5s);
     @include transform(translateY(-100%));
   }
 }

@@ -3,7 +3,15 @@
   <compose view="../glyphs/hawcons-linear.svg"></compose>
   <compose view="../glyphs/hawcons-filled.svg"></compose>
 
-  <ui-drawer ref="appDrawer" close-on-click>
+  <ui-drawer ref="appDrawer" close-on-click close-glyph="glyph-none">
+    <ui-row>
+      <ui-column auto class="ui-pad-h"><img src="examples/images/logo.png" width="36"/></ui-column>
+      <ui-column fill class="ui-margin-none">
+        <h6 class="ui-text-secondary ui-strong">${constants.Title}<small class="ui-text-gray">Version ${constants.Version}</small>
+        </h6>
+      </ui-column>
+    </ui-row>
+    <hr/>
     <ul>
       <li>
         <a href="/viewport">Viewport</a>
@@ -30,7 +38,9 @@
     <ui-router-view></ui-router-view>
 
     <ui-app-footer>
-      <span>&copy; 2017, Adarsh Pastakia<br/><small>Version ${constants.Version}</small></span>
+      <span>&copy; 2017, Adarsh Pastakia<br/>
+        <small>Version ${constants.Version}</small>
+      </span>
       <div>
         <a class="ui-link ui-hover-warning" href="#" css.bind="{fontSize: '2rem'}">
           <ui-glyph glyph="icon-moon-stackoverflow"></ui-glyph>

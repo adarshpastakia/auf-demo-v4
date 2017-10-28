@@ -6,6 +6,7 @@
 import { autoinject } from 'aurelia-framework';
 import { Router, RouterConfiguration } from 'aurelia-router';
 import { UIConstants } from 'aurelia-ui-framework';
+import environment from '../environment';
 
 @autoinject()
 export class App {
@@ -15,7 +16,7 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router) {
     this.router = router;
     config.title = UIConstants.Title;
-    config.options.root = '/';
+    config.options.root = environment.debug ? '/' : '/auf-demo-v4';
     config.options.pushState = true;
     config.mapUnknownRoutes('src/home/unknown');
     config.map([
@@ -27,6 +28,8 @@ export class App {
         route: 'viewport', moduleId: './core/viewport', title: 'Viewport', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:viewport'
       }, {
         route: 'page', moduleId: './core/page', title: 'Page', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:page'
+      }, {
+        route: 'grid', moduleId: './core/grid', title: 'Responsive Grid', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:grid'
       }, {
         route: 'buttons', moduleId: './inputs/buttons', title: 'Buttons', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:buttons'
       }
