@@ -18,16 +18,16 @@ export class Container {
   elSource: any = {};
   elWiki: any = {};
   attached() {
-    this.elSource.innerHTML = this.renderHtml(this.source);
-    this.elWiki.innerHTML = this.renderHtml(this.wiki);
+    if (this.source) this.elSource.innerHTML = this.renderHtml(this.source);
+    if (this.wiki) this.elWiki.innerHTML = this.renderHtml(this.wiki);
   }
 
   sourceChanged(newValue) {
-    this.elSource.innerHTML = this.renderHtml(newValue);
+    if (newValue) this.elSource.innerHTML = this.renderHtml(newValue);
   }
 
   wikiChanged(newValue) {
-    this.elWiki.innerHTML = this.renderHtml(newValue);
+    if (newValue) this.elWiki.innerHTML = this.renderHtml(newValue);
   }
 
   renderHtml(html) {

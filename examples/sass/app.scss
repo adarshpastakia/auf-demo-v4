@@ -99,9 +99,12 @@
 }
 
 .x-title {
-  color      : $secondary;
+  color      : $gray;
   margin     : 1em 0 0.5em !important;
   font-weight: 400;
+}
+h4.x-title {
+  color: $darkGray;
 }
 
 .x-tab {

@@ -5,20 +5,24 @@
 -->
 <template>
   <ui-section column-layout>
-    <ui-row class="ui-bg-light ui-pad-h" middle>
-      <ui-column fill>
-        <h4 class="ui-text-secondary">${pageTitle}</h4>
-      </ui-column>
-      <a class="x-tab ${currentView==0?'x-tab-active':''}" click.trigger="currentView=0" tooltip="message:Examples">
-        <ui-glyph glyph="icon-moon-eye"></ui-glyph>
-      </a>
-      <a class="x-tab ${currentView==1?'x-tab-active':''}" click.trigger="currentView=1" tooltip="message:Source">
-        <ui-glyph glyph="icon-moon-embed2"></ui-glyph>
-      </a>
-      <a class="x-tab ${currentView==2?'x-tab-active':''}" click.trigger="currentView=2" tooltip="message:Wiki">
-        <ui-glyph glyph="icon-moon-lab"></ui-glyph>
-      </a>
-    </ui-row>
+    <div class="ui-bg-light ui-pad-h">
+      <ui-container>
+        <ui-row middle>
+          <ui-column fill>
+            <h4 class="ui-text-primary">${pageTitle}</h4>
+          </ui-column>
+          <a class="x-tab ${currentView==0?'x-tab-active':''}" click.trigger="currentView=0" tooltip="message:Examples">
+            <ui-glyph glyph="icon-moon-eye"></ui-glyph>
+          </a>
+          <a class="x-tab ${currentView==1?'x-tab-active':''}" click.trigger="currentView=1" tooltip="message:Source" if.bind="source">
+            <ui-glyph glyph="icon-moon-embed2"></ui-glyph>
+          </a>
+          <a class="x-tab ${currentView==2?'x-tab-active':''}" click.trigger="currentView=2" tooltip="message:Wiki" if.bind="wiki">
+            <ui-glyph glyph="icon-moon-lab"></ui-glyph>
+          </a>
+        </ui-row>
+      </ui-container>
+    </div>
     <ui-content padded scroll show.bind="currentView===0">
       <ui-container>
         <slot></slot>

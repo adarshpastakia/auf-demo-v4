@@ -4,11 +4,11 @@
   <compose view="../glyphs/hawcons-filled.svg"></compose>
 
   <ui-drawer ref="appDrawer" close-on-click scroll close-glyph="glyph-none">
-    <a href="/">
+    <a href="#/">
       <ui-row>
         <ui-column auto class="ui-pad-h"><img src="examples/images/logo.png" width="36"/></ui-column>
         <ui-column fill class="ui-margin-none">
-          <h6 class="ui-text-secondary ui-strong">${constants.Title}<small class="ui-text-gray">Version ${constants.Version}</small>
+          <h6 class="ui-text-primary ui-strong">${constants.Title}<small class="ui-text-gray">Version ${constants.Version}</small>
           </h6>
         </ui-column>
       </ui-row>
@@ -21,10 +21,10 @@
     </ui-menu>
   </ui-drawer>
 
-  <ui-viewport ribbon="message:v4 Work in Progress;theme:red">
+  <ui-viewport ribbon="message:v4 Work in Progress;theme:blue">
     <ui-app-header>
       <ui-drawer-toggle drawer.bind="appDrawer"></ui-drawer-toggle>
-      <ui-app-title class="${router.currentInstruction.fragment=='/'?'x-hide':''}" src="examples/images/logo.png">${constants.Title}</ui-app-title>
+      <ui-app-title href="#/" class="${router.currentInstruction.fragment=='/'?'x-hide':''}" src="examples/images/logo.png">${constants.Title}</ui-app-title>
     </ui-app-header>
 
     <ui-router-view></ui-router-view>

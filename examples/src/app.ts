@@ -16,8 +16,8 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router) {
     this.router = router;
     config.title = UIConstants.Title;
-    config.options.root = environment.debug ? '/' : '/auf-demo-v4';
-    config.options.pushState = true;
+    // config.options.root = environment.debug ? '/' : '/auf-demo-v4';
+    // config.options.pushState = true;
     config.mapUnknownRoutes('src/home/unknown');
     config.map([
       {
@@ -25,15 +25,17 @@ export class App {
       }, {
         route: '404', moduleId: './home/unknown', nav: false, auth: false, name: '404'
       }, {
-        route: 'overview', moduleId: './styles/overview', title: 'Overview', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:overview'
+        route: 'styles/*path', moduleId: './styles/view', title: 'Styling', nav: false, auth: false, name: 'styles'
       }, {
-        route: 'typography', moduleId: './styles/typography', title: 'Typography', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:typography'
+        route: 'styles:home', redirect: 'styles/home', title: 'Overview', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:home'
       }, {
-        route: 'glyphs', moduleId: './styles/glyphs', title: 'SVG Gylphs', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:glyphs'
+        route: 'styles:typo', redirect: 'styles/typo', title: 'Typography', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:typo'
       }, {
-        route: 'flags', moduleId: './styles/flags', title: 'Flag Icons', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:flags'
+        route: 'styles:glyphs', redirect: 'styles/glyphs', title: 'SVG Gylphs', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:glyphs'
       }, {
-        route: 'colors', moduleId: './styles/colors', title: 'Color Charts', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:colors'
+        route: 'styles:flags', redirect: 'styles/flags', title: 'Flag Icons', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:flags'
+      }, {
+        route: 'styles:colors', redirect: 'styles/colors', title: 'Color Charts', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:colors'
       }, {
         route: 'viewport', moduleId: './core/viewport', title: 'Viewport', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:viewport'
       }, {
