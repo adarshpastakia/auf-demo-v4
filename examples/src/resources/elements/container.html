@@ -9,13 +9,13 @@
       <ui-column fill>
         <h4 class="ui-text-secondary">${pageTitle}</h4>
       </ui-column>
-      <a class="x-tab ${currentView==0?'x-tab-active':''}" click.trigger="currentView=0">
+      <a class="x-tab ${currentView==0?'x-tab-active':''}" click.trigger="currentView=0" tooltip="message:Examples">
         <ui-glyph glyph="icon-moon-eye"></ui-glyph>
       </a>
-      <a class="x-tab ${currentView==1?'x-tab-active':''}" click.trigger="currentView=1">
+      <a class="x-tab ${currentView==1?'x-tab-active':''}" click.trigger="currentView=1" tooltip="message:Source">
         <ui-glyph glyph="icon-moon-embed2"></ui-glyph>
       </a>
-      <a class="x-tab ${currentView==2?'x-tab-active':''}" click.trigger="currentView=2">
+      <a class="x-tab ${currentView==2?'x-tab-active':''}" click.trigger="currentView=2" tooltip="message:Wiki">
         <ui-glyph glyph="icon-moon-lab"></ui-glyph>
       </a>
     </ui-row>

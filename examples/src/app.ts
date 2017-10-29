@@ -25,6 +25,16 @@ export class App {
       }, {
         route: '404', moduleId: './home/unknown', nav: false, auth: false, name: '404'
       }, {
+        route: 'overview', moduleId: './styles/overview', title: 'Overview', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:overview'
+      }, {
+        route: 'typography', moduleId: './styles/typography', title: 'Typography', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:typography'
+      }, {
+        route: 'glyphs', moduleId: './styles/glyphs', title: 'SVG Gylphs', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:glyphs'
+      }, {
+        route: 'flags', moduleId: './styles/flags', title: 'Flag Icons', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:flags'
+      }, {
+        route: 'colors', moduleId: './styles/colors', title: 'Color Charts', nav: true, auth: false, settings: { section: 'Styling' }, name: 'styles:colors'
+      }, {
         route: 'viewport', moduleId: './core/viewport', title: 'Viewport', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:viewport'
       }, {
         route: 'page', moduleId: './core/page', title: 'Page', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:page'
@@ -32,9 +42,44 @@ export class App {
         route: 'grid', moduleId: './core/grid', title: 'Responsive Grid', nav: true, auth: false, settings: { section: 'Core' }, name: 'core:grid'
       }, {
         route: 'buttons', moduleId: './inputs/buttons', title: 'Buttons', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:buttons'
+      }, {
+        route: 'text', moduleId: './inputs/text', title: 'Textual Inputs', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:text'
+      }, {
+        route: 'lists', moduleId: './inputs/lists', title: 'Lists & Selects', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:lists'
+      }, {
+        route: 'datetime', moduleId: './inputs/datetime', title: 'Date/Time', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:datetime'
+      }, {
+        route: 'options', moduleId: './inputs/options', title: 'Options & Switches', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:options'
+      }, {
+        route: 'content', moduleId: './inputs/content', title: 'Content Editor', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:content'
+      }, {
+        route: 'validation', moduleId: './inputs/validation', title: 'Validations', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:validation'
+      }, {
+        route: 'drawer', moduleId: './components/drawer', title: 'Drawer', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
+      }, {
+        route: 'sidebar', moduleId: './components/sidebar', title: 'Sidebar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
+      }, {
+        route: 'menu', moduleId: './components/menu', title: 'Menus', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:menu'
+      }, {
+        route: 'toolbar', moduleId: './components/toolbar', title: 'Toolbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:toolbar'
+      }, {
+        route: 'statsbar', moduleId: './components/statsbar', title: 'Statsbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:statsbar'
+      }, {
+        route: 'panels', moduleId: './components/panels', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:panels'
+      }, {
+        route: 'tabs', moduleId: './components/tabs', title: 'Tab Panel', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:tabs'
+      }, {
+        route: 'tree', moduleId: './components/tree', title: 'Tree Panel', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:tree'
+      }, {
+        route: 'datagrid', moduleId: './components/datagrid', title: 'Datagrid', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:datagrid'
+      }, {
+        route: 'breadcrumbs', moduleId: './components/breadcrumbs', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:breadcrumbs'
+      }, {
+        route: 'dialogs', moduleId: './components/dialogs', title: 'Dialogs', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:dialogs'
+      }, {
+        route: 'alerts', moduleId: './components/alerts', title: 'Alerts & Toasts', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:alerts'
       }
     ]);
-    console.log(this.router);
   }
 
 }

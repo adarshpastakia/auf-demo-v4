@@ -3,33 +3,25 @@
   <compose view="../glyphs/hawcons-linear.svg"></compose>
   <compose view="../glyphs/hawcons-filled.svg"></compose>
 
-  <ui-drawer ref="appDrawer" close-on-click close-glyph="glyph-none">
-    <ui-row>
-      <ui-column auto class="ui-pad-h"><img src="examples/images/logo.png" width="36"/></ui-column>
-      <ui-column fill class="ui-margin-none">
-        <h6 class="ui-text-secondary ui-strong">${constants.Title}<small class="ui-text-gray">Version ${constants.Version}</small>
-        </h6>
-      </ui-column>
-    </ui-row>
+  <ui-drawer ref="appDrawer" close-on-click scroll close-glyph="glyph-none">
+    <a href="/">
+      <ui-row>
+        <ui-column auto class="ui-pad-h"><img src="examples/images/logo.png" width="36"/></ui-column>
+        <ui-column fill class="ui-margin-none">
+          <h6 class="ui-text-secondary ui-strong">${constants.Title}<small class="ui-text-gray">Version ${constants.Version}</small>
+          </h6>
+        </ui-column>
+      </ui-row>
+    </a>
     <hr/>
-    <ul>
-      <li>
-        <a href="/viewport">Viewport</a>
-      </li>
-      <li>
-        <a href="/page">Page</a>
-      </li>
-      <li>
-        <a href="/grid">Responsive Grid</a>
-      </li>
-      <li>
-        <a href="/buttons">Buttons</a>
-      </li>
-    </ul>
+    <ui-menu>
+      <ui-menu-group label.bind="routes.key" repeat.for="routes of router.navigation | group:'settings.section'" collapsible>
+        <ui-menu-item repeat.for="route of routes.items" href.bind="route.href" active.bind="route.isActive" icon.bind="route.settings.icon" disabled.bind="route.settings.disabled">${route.settings.title || route.title}</ui-menu-item>
+      </ui-menu-group>
+    </ui-menu>
   </ui-drawer>
 
-  <ui-viewport>
-    <div class="x-fixed-banner">V4 Work in Progress!!</div>
+  <ui-viewport ribbon="message:v4 Work in Progress;theme:red">
     <ui-app-header>
       <ui-drawer-toggle drawer.bind="appDrawer"></ui-drawer-toggle>
       <ui-app-title class="${router.currentInstruction.fragment=='/'?'x-hide':''}" src="examples/images/logo.png">${constants.Title}</ui-app-title>

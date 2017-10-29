@@ -6,16 +6,7 @@
 @import "node_modules/aurelia-ui-framework/sass/framework";
 @import "./hljs";
 
-.x-home-page {
-  &:before {
-    content   : '';
-    position  : absolute;
-    left      : 0;
-    right     : 0;
-    height    : 10em;
-    background: $app-header-bg;
-  }
-}
+.x-home-page {}
 
 .x-fixed-banner {
   position     : fixed;
@@ -49,8 +40,22 @@
 }
 
 .x-banner {
-  color: $white;
+  color     : $white;
   background: $app-header-bg;
+
+  &:before {
+    content   : '';
+    position  : absolute;
+    left      : 0;
+    right     : 0;
+    top       : -29em;
+    height    : 30em;
+    background: $app-header-bg;
+  }
+
+  &.ui-bg-secondary {
+    background: $page-title-bg !important;
+  }
 
   .big-button {
     border    : 1px solid rgba(#f0f0f0, .3);
@@ -58,12 +63,14 @@
     margin    : 0 1em 1em;
     min-width : 12em;
     color     : white;
+    background: rgba($black, .1);
     text-align: center;
+    position  : relative;
     display   : inline-block;
 
     &:hover {
       text      : white;
-      background: $primary;
+      background: rgba($white, .1);
     }
   }
 }
@@ -129,6 +136,98 @@
     strong:first-child {
       color: $danger;
     }
+  }
+}
+
+.x-viewports {
+  position: relative;
+  height  : 15em;
+  margin  : 0 1rem;
+
+  > div {
+    left    : 0;
+    top     : 0;
+    width   : 100%;
+    position: absolute;
+    border  : 1px dotted $lightGray;
+
+    &:before {
+      position : absolute;
+      bottom   : 1.25rem;
+      left     : 1rem;
+      font-size: 1rem;
+    }
+
+    &:after {
+      position : absolute;
+      bottom   : 0.25rem;
+      left     : 1rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .x-xl {
+    &:before {
+      content: 'X-Large';
+    }
+
+    &:after {
+      content: '#{$grid-xl-min}';
+    }
+    height    : 100%;
+    background: lighten($gray, 50%);
+  }
+
+  .x-lg {
+    &:before {
+      content: 'Large';
+    }
+
+    &:after {
+      content: '#{$grid-lg-min} - #{$grid-xl-min}';
+    }
+    height    : 80%;
+    max-width : $grid-lg-min;
+    background: lighten($success, 35%);
+  }
+
+  .x-md {
+    &:before {
+      content: 'Medium';
+    }
+
+    &:after {
+      content: '#{$grid-md-min} - #{$grid-lg-min}';
+    }
+    height    : 60%;
+    max-width : $grid-md-min;
+    background: lighten($info, 30%);
+  }
+
+  .x-sm {
+    &:before {
+      content: 'Small';
+    }
+
+    &:after {
+      content: '#{$grid-sm-min} - #{$grid-md-min}';
+    }
+    height    : 40%;
+    max-width : $grid-sm-min;
+    background: lighten($warning, 30%);
+  }
+
+  .x-xs {
+    &:before {
+      content: 'X-Small';
+    }
+
+    &:after {
+      content: '#{$grid-xs-min} - #{$grid-sm-min}';
+    }
+    height    : 20%;
+    max-width : $grid-xs-min;
+    background: lighten($danger, 25%);
   }
 }
 

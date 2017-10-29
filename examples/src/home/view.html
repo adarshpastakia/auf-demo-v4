@@ -46,7 +46,7 @@
             <a href="#/start" class="big-button">
               <span t="home:start.title">Getting Started</span>
             </a>
-            <a href="#/example" class="big-button" badge-danger="NEW" tooltip="message:Examples">
+            <a href="#/example" class="big-button">
               <span t="home:examples.title">Examples</span>
             </a>
             <a href="https://github.com/adarshpastakia/aurelia-ui-framework/wiki" target="_blank" class="noarrow big-button">
@@ -59,17 +59,21 @@
       <div class="x-body">
         <ui-container padded>
           <div class="ui-pad-all">
+            <h4 class="ui-text-primary">Styles &amp; Theme</h4>
+          </div>
+          <ui-row>
+            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Styling'">
+              <a href.bind="route.href">${route.settings.title || route.title}</a>
+            </ui-column>
+          </ui-row>
+
+          <hr/>
+          <div class="ui-pad-all">
             <h4 class="ui-text-primary">Core Components</h4>
           </div>
           <ui-row>
-            <ui-column padded auto>
-              <a href="/viewport">Viewport</a>
-            </ui-column>
-            <ui-column padded auto>
-              <a href="/page">Page</a>
-            </ui-column>
-            <ui-column padded auto>
-              <a href="/grid">Responsive Grid</a>
+            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Core'">
+              <a href.bind="route.href">${route.settings.title || route.title}</a>
             </ui-column>
           </ui-row>
 
@@ -78,14 +82,8 @@
             <h4 class="ui-text-primary">Input Elements</h4>
           </div>
           <ui-row>
-            <ui-column padded auto>
-              <a href="/buttons">Buttons</a>
-            </ui-column>
-            <ui-column padded auto>
-              <a href="/inputs">Textual Inputs</a>
-            </ui-column>
-            <ui-column padded auto>
-              <a href="/lists">Lists &amp; Selects</a>
+            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Inputs'">
+              <a href.bind="route.href">${route.settings.title || route.title}</a>
             </ui-column>
           </ui-row>
 
@@ -94,14 +92,8 @@
             <h4 class="ui-text-primary">Components</h4>
           </div>
           <ui-row>
-            <ui-column padded auto>
-              <a href="/drawer">Drawer</a>
-            </ui-column>
-            <ui-column padded auto>
-              <a href="/sidebar">Sidebar</a>
-            </ui-column>
-            <ui-column padded auto>
-              <a href="/menu">Menus</a>
+            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Components'">
+              <a href.bind="route.href">${route.settings.title || route.title}</a>
             </ui-column>
           </ui-row>
 

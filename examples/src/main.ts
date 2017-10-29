@@ -7,12 +7,13 @@
 import { Aurelia } from 'aurelia-framework';
 import { UIConstants } from 'aurelia-ui-framework'
 import environment from '../environment';
+import 'highlightjs';
 
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
     .plugin('aurelia-ui-framework', config => {
-      UIConstants['themes'] = 'light,dark,primary,secondary,info,danger,success,warning';
+      UIConstants['themes'] = 'light,muted,dark,primary,secondary,info,danger,success,warning';
       UIConstants['colors'] = 'red,pink,violet,purple,indigo,blue,cyan,teal,green,lime,yellow,amber,orange,brown,gray';
     })
     .plugin('aurelia-animator-css')
