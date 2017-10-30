@@ -46,29 +46,39 @@
 
 .ui-statsbar.red-bg {
   background: #ff3b30; }
-  .ui-statsbar.red-bg .ui-stat {
+  .ui-statsbar.red-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.red-bg .ui-stat-label {
+  .ui-statsbar.red-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.red-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.red-bg {
-  color: #ecf0f1;
-  background: #ff3b30; }
-  .ui-statsbar .ui-stat.red-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #ff3b30 !important; }
+  .ui-statsbar .ui-stat.red-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.red-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.red-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.red {
   background: auto; }
-  .ui-statsbar.red .ui-stat {
+  .ui-statsbar.red .ui-stat .ui-icon {
     color: #ff3b30; }
-  .ui-statsbar.red .ui-stat-label {
+  .ui-statsbar.red:not(.icon-only) .ui-stat-value {
+    color: #ff3b30; }
+  .ui-statsbar.red:not(.icon-only) .ui-stat-label {
     color: rgba(255, 59, 48, 0.75); }
 
 .ui-statsbar .ui-stat.red {
-  color: #ff3b30;
-  background: auto; }
-  .ui-statsbar .ui-stat.red .ui-stat-label {
-    color: rgba(255, 59, 48, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.red .ui-icon {
+    color: #ff3b30 !important; }
+  .ui-statsbar .ui-stat.red:not(.icon-only) .ui-stat-value {
+    color: #ff3b30 !important; }
+  .ui-statsbar .ui-stat.red:not(.icon-only) .ui-stat-label {
+    color: rgba(255, 59, 48, 0.75) !important; }
 
 .ui-toast.red {
   background: #ff3b30;
@@ -326,6 +336,10 @@
   color: #ecf0f1;
   background: #ff3b30; }
 
+.ui-badge.red:after {
+  color: #ecf0f1;
+  background: #ff3b30; }
+
 .ui-ribbon.red {
   color: #ecf0f1;
   background: #ff3b30; }
@@ -415,29 +429,39 @@
 
 .ui-statsbar.pink-bg {
   background: #e91e63; }
-  .ui-statsbar.pink-bg .ui-stat {
+  .ui-statsbar.pink-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.pink-bg .ui-stat-label {
+  .ui-statsbar.pink-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.pink-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.pink-bg {
-  color: #ecf0f1;
-  background: #e91e63; }
-  .ui-statsbar .ui-stat.pink-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #e91e63 !important; }
+  .ui-statsbar .ui-stat.pink-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.pink-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.pink-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.pink {
   background: auto; }
-  .ui-statsbar.pink .ui-stat {
+  .ui-statsbar.pink .ui-stat .ui-icon {
     color: #e91e63; }
-  .ui-statsbar.pink .ui-stat-label {
+  .ui-statsbar.pink:not(.icon-only) .ui-stat-value {
+    color: #e91e63; }
+  .ui-statsbar.pink:not(.icon-only) .ui-stat-label {
     color: rgba(233, 30, 99, 0.75); }
 
 .ui-statsbar .ui-stat.pink {
-  color: #e91e63;
-  background: auto; }
-  .ui-statsbar .ui-stat.pink .ui-stat-label {
-    color: rgba(233, 30, 99, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.pink .ui-icon {
+    color: #e91e63 !important; }
+  .ui-statsbar .ui-stat.pink:not(.icon-only) .ui-stat-value {
+    color: #e91e63 !important; }
+  .ui-statsbar .ui-stat.pink:not(.icon-only) .ui-stat-label {
+    color: rgba(233, 30, 99, 0.75) !important; }
 
 .ui-toast.pink {
   background: #e91e63;
@@ -695,6 +719,10 @@
   color: #ecf0f1;
   background: #e91e63; }
 
+.ui-badge.pink:after {
+  color: #ecf0f1;
+  background: #e91e63; }
+
 .ui-ribbon.pink {
   color: #ecf0f1;
   background: #e91e63; }
@@ -784,29 +812,39 @@
 
 .ui-statsbar.violet-bg {
   background: #9c27b0; }
-  .ui-statsbar.violet-bg .ui-stat {
+  .ui-statsbar.violet-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.violet-bg .ui-stat-label {
+  .ui-statsbar.violet-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.violet-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.violet-bg {
-  color: #ecf0f1;
-  background: #9c27b0; }
-  .ui-statsbar .ui-stat.violet-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #9c27b0 !important; }
+  .ui-statsbar .ui-stat.violet-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.violet-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.violet-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.violet {
   background: auto; }
-  .ui-statsbar.violet .ui-stat {
+  .ui-statsbar.violet .ui-stat .ui-icon {
     color: #9c27b0; }
-  .ui-statsbar.violet .ui-stat-label {
+  .ui-statsbar.violet:not(.icon-only) .ui-stat-value {
+    color: #9c27b0; }
+  .ui-statsbar.violet:not(.icon-only) .ui-stat-label {
     color: rgba(156, 39, 176, 0.75); }
 
 .ui-statsbar .ui-stat.violet {
-  color: #9c27b0;
-  background: auto; }
-  .ui-statsbar .ui-stat.violet .ui-stat-label {
-    color: rgba(156, 39, 176, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.violet .ui-icon {
+    color: #9c27b0 !important; }
+  .ui-statsbar .ui-stat.violet:not(.icon-only) .ui-stat-value {
+    color: #9c27b0 !important; }
+  .ui-statsbar .ui-stat.violet:not(.icon-only) .ui-stat-label {
+    color: rgba(156, 39, 176, 0.75) !important; }
 
 .ui-toast.violet {
   background: #9c27b0;
@@ -1064,6 +1102,10 @@
   color: #ecf0f1;
   background: #9c27b0; }
 
+.ui-badge.violet:after {
+  color: #ecf0f1;
+  background: #9c27b0; }
+
 .ui-ribbon.violet {
   color: #ecf0f1;
   background: #9c27b0; }
@@ -1153,29 +1195,39 @@
 
 .ui-statsbar.purple-bg {
   background: #673ab7; }
-  .ui-statsbar.purple-bg .ui-stat {
+  .ui-statsbar.purple-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.purple-bg .ui-stat-label {
+  .ui-statsbar.purple-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.purple-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.purple-bg {
-  color: #ecf0f1;
-  background: #673ab7; }
-  .ui-statsbar .ui-stat.purple-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #673ab7 !important; }
+  .ui-statsbar .ui-stat.purple-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.purple-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.purple-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.purple {
   background: auto; }
-  .ui-statsbar.purple .ui-stat {
+  .ui-statsbar.purple .ui-stat .ui-icon {
     color: #673ab7; }
-  .ui-statsbar.purple .ui-stat-label {
+  .ui-statsbar.purple:not(.icon-only) .ui-stat-value {
+    color: #673ab7; }
+  .ui-statsbar.purple:not(.icon-only) .ui-stat-label {
     color: rgba(103, 58, 183, 0.75); }
 
 .ui-statsbar .ui-stat.purple {
-  color: #673ab7;
-  background: auto; }
-  .ui-statsbar .ui-stat.purple .ui-stat-label {
-    color: rgba(103, 58, 183, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.purple .ui-icon {
+    color: #673ab7 !important; }
+  .ui-statsbar .ui-stat.purple:not(.icon-only) .ui-stat-value {
+    color: #673ab7 !important; }
+  .ui-statsbar .ui-stat.purple:not(.icon-only) .ui-stat-label {
+    color: rgba(103, 58, 183, 0.75) !important; }
 
 .ui-toast.purple {
   background: #673ab7;
@@ -1433,6 +1485,10 @@
   color: #ecf0f1;
   background: #673ab7; }
 
+.ui-badge.purple:after {
+  color: #ecf0f1;
+  background: #673ab7; }
+
 .ui-ribbon.purple {
   color: #ecf0f1;
   background: #673ab7; }
@@ -1522,29 +1578,39 @@
 
 .ui-statsbar.indigo-bg {
   background: #3f51b5; }
-  .ui-statsbar.indigo-bg .ui-stat {
+  .ui-statsbar.indigo-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.indigo-bg .ui-stat-label {
+  .ui-statsbar.indigo-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.indigo-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.indigo-bg {
-  color: #ecf0f1;
-  background: #3f51b5; }
-  .ui-statsbar .ui-stat.indigo-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #3f51b5 !important; }
+  .ui-statsbar .ui-stat.indigo-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.indigo-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.indigo-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.indigo {
   background: auto; }
-  .ui-statsbar.indigo .ui-stat {
+  .ui-statsbar.indigo .ui-stat .ui-icon {
     color: #3f51b5; }
-  .ui-statsbar.indigo .ui-stat-label {
+  .ui-statsbar.indigo:not(.icon-only) .ui-stat-value {
+    color: #3f51b5; }
+  .ui-statsbar.indigo:not(.icon-only) .ui-stat-label {
     color: rgba(63, 81, 181, 0.75); }
 
 .ui-statsbar .ui-stat.indigo {
-  color: #3f51b5;
-  background: auto; }
-  .ui-statsbar .ui-stat.indigo .ui-stat-label {
-    color: rgba(63, 81, 181, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.indigo .ui-icon {
+    color: #3f51b5 !important; }
+  .ui-statsbar .ui-stat.indigo:not(.icon-only) .ui-stat-value {
+    color: #3f51b5 !important; }
+  .ui-statsbar .ui-stat.indigo:not(.icon-only) .ui-stat-label {
+    color: rgba(63, 81, 181, 0.75) !important; }
 
 .ui-toast.indigo {
   background: #3f51b5;
@@ -1802,6 +1868,10 @@
   color: #ecf0f1;
   background: #3f51b5; }
 
+.ui-badge.indigo:after {
+  color: #ecf0f1;
+  background: #3f51b5; }
+
 .ui-ribbon.indigo {
   color: #ecf0f1;
   background: #3f51b5; }
@@ -1891,29 +1961,39 @@
 
 .ui-statsbar.blue-bg {
   background: #2196f3; }
-  .ui-statsbar.blue-bg .ui-stat {
+  .ui-statsbar.blue-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.blue-bg .ui-stat-label {
+  .ui-statsbar.blue-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.blue-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.blue-bg {
-  color: #ecf0f1;
-  background: #2196f3; }
-  .ui-statsbar .ui-stat.blue-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #2196f3 !important; }
+  .ui-statsbar .ui-stat.blue-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.blue-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.blue-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.blue {
   background: auto; }
-  .ui-statsbar.blue .ui-stat {
+  .ui-statsbar.blue .ui-stat .ui-icon {
     color: #2196f3; }
-  .ui-statsbar.blue .ui-stat-label {
+  .ui-statsbar.blue:not(.icon-only) .ui-stat-value {
+    color: #2196f3; }
+  .ui-statsbar.blue:not(.icon-only) .ui-stat-label {
     color: rgba(33, 150, 243, 0.75); }
 
 .ui-statsbar .ui-stat.blue {
-  color: #2196f3;
-  background: auto; }
-  .ui-statsbar .ui-stat.blue .ui-stat-label {
-    color: rgba(33, 150, 243, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.blue .ui-icon {
+    color: #2196f3 !important; }
+  .ui-statsbar .ui-stat.blue:not(.icon-only) .ui-stat-value {
+    color: #2196f3 !important; }
+  .ui-statsbar .ui-stat.blue:not(.icon-only) .ui-stat-label {
+    color: rgba(33, 150, 243, 0.75) !important; }
 
 .ui-toast.blue {
   background: #2196f3;
@@ -2171,6 +2251,10 @@
   color: #ecf0f1;
   background: #2196f3; }
 
+.ui-badge.blue:after {
+  color: #ecf0f1;
+  background: #2196f3; }
+
 .ui-ribbon.blue {
   color: #ecf0f1;
   background: #2196f3; }
@@ -2260,29 +2344,39 @@
 
 .ui-statsbar.cyan-bg {
   background: #00bcd4; }
-  .ui-statsbar.cyan-bg .ui-stat {
+  .ui-statsbar.cyan-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.cyan-bg .ui-stat-label {
+  .ui-statsbar.cyan-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.cyan-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.cyan-bg {
-  color: #ecf0f1;
-  background: #00bcd4; }
-  .ui-statsbar .ui-stat.cyan-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #00bcd4 !important; }
+  .ui-statsbar .ui-stat.cyan-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.cyan-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.cyan-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.cyan {
   background: auto; }
-  .ui-statsbar.cyan .ui-stat {
+  .ui-statsbar.cyan .ui-stat .ui-icon {
     color: #00bcd4; }
-  .ui-statsbar.cyan .ui-stat-label {
+  .ui-statsbar.cyan:not(.icon-only) .ui-stat-value {
+    color: #00bcd4; }
+  .ui-statsbar.cyan:not(.icon-only) .ui-stat-label {
     color: rgba(0, 188, 212, 0.75); }
 
 .ui-statsbar .ui-stat.cyan {
-  color: #00bcd4;
-  background: auto; }
-  .ui-statsbar .ui-stat.cyan .ui-stat-label {
-    color: rgba(0, 188, 212, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.cyan .ui-icon {
+    color: #00bcd4 !important; }
+  .ui-statsbar .ui-stat.cyan:not(.icon-only) .ui-stat-value {
+    color: #00bcd4 !important; }
+  .ui-statsbar .ui-stat.cyan:not(.icon-only) .ui-stat-label {
+    color: rgba(0, 188, 212, 0.75) !important; }
 
 .ui-toast.cyan {
   background: #00bcd4;
@@ -2540,6 +2634,10 @@
   color: #ecf0f1;
   background: #00bcd4; }
 
+.ui-badge.cyan:after {
+  color: #ecf0f1;
+  background: #00bcd4; }
+
 .ui-ribbon.cyan {
   color: #ecf0f1;
   background: #00bcd4; }
@@ -2629,29 +2727,39 @@
 
 .ui-statsbar.teal-bg {
   background: #009688; }
-  .ui-statsbar.teal-bg .ui-stat {
+  .ui-statsbar.teal-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.teal-bg .ui-stat-label {
+  .ui-statsbar.teal-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.teal-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.teal-bg {
-  color: #ecf0f1;
-  background: #009688; }
-  .ui-statsbar .ui-stat.teal-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #009688 !important; }
+  .ui-statsbar .ui-stat.teal-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.teal-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.teal-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.teal {
   background: auto; }
-  .ui-statsbar.teal .ui-stat {
+  .ui-statsbar.teal .ui-stat .ui-icon {
     color: #009688; }
-  .ui-statsbar.teal .ui-stat-label {
+  .ui-statsbar.teal:not(.icon-only) .ui-stat-value {
+    color: #009688; }
+  .ui-statsbar.teal:not(.icon-only) .ui-stat-label {
     color: rgba(0, 150, 136, 0.75); }
 
 .ui-statsbar .ui-stat.teal {
-  color: #009688;
-  background: auto; }
-  .ui-statsbar .ui-stat.teal .ui-stat-label {
-    color: rgba(0, 150, 136, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.teal .ui-icon {
+    color: #009688 !important; }
+  .ui-statsbar .ui-stat.teal:not(.icon-only) .ui-stat-value {
+    color: #009688 !important; }
+  .ui-statsbar .ui-stat.teal:not(.icon-only) .ui-stat-label {
+    color: rgba(0, 150, 136, 0.75) !important; }
 
 .ui-toast.teal {
   background: #009688;
@@ -2909,6 +3017,10 @@
   color: #ecf0f1;
   background: #009688; }
 
+.ui-badge.teal:after {
+  color: #ecf0f1;
+  background: #009688; }
+
 .ui-ribbon.teal {
   color: #ecf0f1;
   background: #009688; }
@@ -2998,29 +3110,39 @@
 
 .ui-statsbar.green-bg {
   background: #4caf50; }
-  .ui-statsbar.green-bg .ui-stat {
+  .ui-statsbar.green-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.green-bg .ui-stat-label {
+  .ui-statsbar.green-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.green-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.green-bg {
-  color: #ecf0f1;
-  background: #4caf50; }
-  .ui-statsbar .ui-stat.green-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #4caf50 !important; }
+  .ui-statsbar .ui-stat.green-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.green-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.green-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.green {
   background: auto; }
-  .ui-statsbar.green .ui-stat {
+  .ui-statsbar.green .ui-stat .ui-icon {
     color: #4caf50; }
-  .ui-statsbar.green .ui-stat-label {
+  .ui-statsbar.green:not(.icon-only) .ui-stat-value {
+    color: #4caf50; }
+  .ui-statsbar.green:not(.icon-only) .ui-stat-label {
     color: rgba(76, 175, 80, 0.75); }
 
 .ui-statsbar .ui-stat.green {
-  color: #4caf50;
-  background: auto; }
-  .ui-statsbar .ui-stat.green .ui-stat-label {
-    color: rgba(76, 175, 80, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.green .ui-icon {
+    color: #4caf50 !important; }
+  .ui-statsbar .ui-stat.green:not(.icon-only) .ui-stat-value {
+    color: #4caf50 !important; }
+  .ui-statsbar .ui-stat.green:not(.icon-only) .ui-stat-label {
+    color: rgba(76, 175, 80, 0.75) !important; }
 
 .ui-toast.green {
   background: #4caf50;
@@ -3278,6 +3400,10 @@
   color: #ecf0f1;
   background: #4caf50; }
 
+.ui-badge.green:after {
+  color: #ecf0f1;
+  background: #4caf50; }
+
 .ui-ribbon.green {
   color: #ecf0f1;
   background: #4caf50; }
@@ -3367,29 +3493,39 @@
 
 .ui-statsbar.lime-bg {
   background: #cddc39; }
-  .ui-statsbar.lime-bg .ui-stat {
+  .ui-statsbar.lime-bg .ui-stat .ui-icon {
     color: #34495e; }
-  .ui-statsbar.lime-bg .ui-stat-label {
+  .ui-statsbar.lime-bg:not(.icon-only) .ui-stat-value {
+    color: #34495e; }
+  .ui-statsbar.lime-bg:not(.icon-only) .ui-stat-label {
     color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar .ui-stat.lime-bg {
-  color: #34495e;
-  background: #cddc39; }
-  .ui-statsbar .ui-stat.lime-bg .ui-stat-label {
-    color: rgba(52, 73, 94, 0.75); }
+  background: #cddc39 !important; }
+  .ui-statsbar .ui-stat.lime-bg .ui-icon {
+    color: #34495e !important; }
+  .ui-statsbar .ui-stat.lime-bg:not(.icon-only) .ui-stat-value {
+    color: #34495e !important; }
+  .ui-statsbar .ui-stat.lime-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(52, 73, 94, 0.75) !important; }
 
 .ui-statsbar.lime {
   background: auto; }
-  .ui-statsbar.lime .ui-stat {
+  .ui-statsbar.lime .ui-stat .ui-icon {
     color: #cddc39; }
-  .ui-statsbar.lime .ui-stat-label {
+  .ui-statsbar.lime:not(.icon-only) .ui-stat-value {
+    color: #cddc39; }
+  .ui-statsbar.lime:not(.icon-only) .ui-stat-label {
     color: rgba(205, 220, 57, 0.75); }
 
 .ui-statsbar .ui-stat.lime {
-  color: #cddc39;
-  background: auto; }
-  .ui-statsbar .ui-stat.lime .ui-stat-label {
-    color: rgba(205, 220, 57, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.lime .ui-icon {
+    color: #cddc39 !important; }
+  .ui-statsbar .ui-stat.lime:not(.icon-only) .ui-stat-value {
+    color: #cddc39 !important; }
+  .ui-statsbar .ui-stat.lime:not(.icon-only) .ui-stat-label {
+    color: rgba(205, 220, 57, 0.75) !important; }
 
 .ui-toast.lime {
   background: #cddc39;
@@ -3647,6 +3783,10 @@
   color: #34495e;
   background: #cddc39; }
 
+.ui-badge.lime:after {
+  color: #34495e;
+  background: #cddc39; }
+
 .ui-ribbon.lime {
   color: #34495e;
   background: #cddc39; }
@@ -3736,29 +3876,39 @@
 
 .ui-statsbar.yellow-bg {
   background: #ffeb3b; }
-  .ui-statsbar.yellow-bg .ui-stat {
+  .ui-statsbar.yellow-bg .ui-stat .ui-icon {
     color: #34495e; }
-  .ui-statsbar.yellow-bg .ui-stat-label {
+  .ui-statsbar.yellow-bg:not(.icon-only) .ui-stat-value {
+    color: #34495e; }
+  .ui-statsbar.yellow-bg:not(.icon-only) .ui-stat-label {
     color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar .ui-stat.yellow-bg {
-  color: #34495e;
-  background: #ffeb3b; }
-  .ui-statsbar .ui-stat.yellow-bg .ui-stat-label {
-    color: rgba(52, 73, 94, 0.75); }
+  background: #ffeb3b !important; }
+  .ui-statsbar .ui-stat.yellow-bg .ui-icon {
+    color: #34495e !important; }
+  .ui-statsbar .ui-stat.yellow-bg:not(.icon-only) .ui-stat-value {
+    color: #34495e !important; }
+  .ui-statsbar .ui-stat.yellow-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(52, 73, 94, 0.75) !important; }
 
 .ui-statsbar.yellow {
   background: auto; }
-  .ui-statsbar.yellow .ui-stat {
+  .ui-statsbar.yellow .ui-stat .ui-icon {
     color: #ffeb3b; }
-  .ui-statsbar.yellow .ui-stat-label {
+  .ui-statsbar.yellow:not(.icon-only) .ui-stat-value {
+    color: #ffeb3b; }
+  .ui-statsbar.yellow:not(.icon-only) .ui-stat-label {
     color: rgba(255, 235, 59, 0.75); }
 
 .ui-statsbar .ui-stat.yellow {
-  color: #ffeb3b;
-  background: auto; }
-  .ui-statsbar .ui-stat.yellow .ui-stat-label {
-    color: rgba(255, 235, 59, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.yellow .ui-icon {
+    color: #ffeb3b !important; }
+  .ui-statsbar .ui-stat.yellow:not(.icon-only) .ui-stat-value {
+    color: #ffeb3b !important; }
+  .ui-statsbar .ui-stat.yellow:not(.icon-only) .ui-stat-label {
+    color: rgba(255, 235, 59, 0.75) !important; }
 
 .ui-toast.yellow {
   background: #ffeb3b;
@@ -4016,6 +4166,10 @@
   color: #34495e;
   background: #ffeb3b; }
 
+.ui-badge.yellow:after {
+  color: #34495e;
+  background: #ffeb3b; }
+
 .ui-ribbon.yellow {
   color: #34495e;
   background: #ffeb3b; }
@@ -4105,29 +4259,39 @@
 
 .ui-statsbar.amber-bg {
   background: #ffc107; }
-  .ui-statsbar.amber-bg .ui-stat {
+  .ui-statsbar.amber-bg .ui-stat .ui-icon {
     color: #34495e; }
-  .ui-statsbar.amber-bg .ui-stat-label {
+  .ui-statsbar.amber-bg:not(.icon-only) .ui-stat-value {
+    color: #34495e; }
+  .ui-statsbar.amber-bg:not(.icon-only) .ui-stat-label {
     color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar .ui-stat.amber-bg {
-  color: #34495e;
-  background: #ffc107; }
-  .ui-statsbar .ui-stat.amber-bg .ui-stat-label {
-    color: rgba(52, 73, 94, 0.75); }
+  background: #ffc107 !important; }
+  .ui-statsbar .ui-stat.amber-bg .ui-icon {
+    color: #34495e !important; }
+  .ui-statsbar .ui-stat.amber-bg:not(.icon-only) .ui-stat-value {
+    color: #34495e !important; }
+  .ui-statsbar .ui-stat.amber-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(52, 73, 94, 0.75) !important; }
 
 .ui-statsbar.amber {
   background: auto; }
-  .ui-statsbar.amber .ui-stat {
+  .ui-statsbar.amber .ui-stat .ui-icon {
     color: #ffc107; }
-  .ui-statsbar.amber .ui-stat-label {
+  .ui-statsbar.amber:not(.icon-only) .ui-stat-value {
+    color: #ffc107; }
+  .ui-statsbar.amber:not(.icon-only) .ui-stat-label {
     color: rgba(255, 193, 7, 0.75); }
 
 .ui-statsbar .ui-stat.amber {
-  color: #ffc107;
-  background: auto; }
-  .ui-statsbar .ui-stat.amber .ui-stat-label {
-    color: rgba(255, 193, 7, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.amber .ui-icon {
+    color: #ffc107 !important; }
+  .ui-statsbar .ui-stat.amber:not(.icon-only) .ui-stat-value {
+    color: #ffc107 !important; }
+  .ui-statsbar .ui-stat.amber:not(.icon-only) .ui-stat-label {
+    color: rgba(255, 193, 7, 0.75) !important; }
 
 .ui-toast.amber {
   background: #ffc107;
@@ -4385,6 +4549,10 @@
   color: #34495e;
   background: #ffc107; }
 
+.ui-badge.amber:after {
+  color: #34495e;
+  background: #ffc107; }
+
 .ui-ribbon.amber {
   color: #34495e;
   background: #ffc107; }
@@ -4474,29 +4642,39 @@
 
 .ui-statsbar.orange-bg {
   background: #ff5722; }
-  .ui-statsbar.orange-bg .ui-stat {
+  .ui-statsbar.orange-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.orange-bg .ui-stat-label {
+  .ui-statsbar.orange-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.orange-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.orange-bg {
-  color: #ecf0f1;
-  background: #ff5722; }
-  .ui-statsbar .ui-stat.orange-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #ff5722 !important; }
+  .ui-statsbar .ui-stat.orange-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.orange-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.orange-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.orange {
   background: auto; }
-  .ui-statsbar.orange .ui-stat {
+  .ui-statsbar.orange .ui-stat .ui-icon {
     color: #ff5722; }
-  .ui-statsbar.orange .ui-stat-label {
+  .ui-statsbar.orange:not(.icon-only) .ui-stat-value {
+    color: #ff5722; }
+  .ui-statsbar.orange:not(.icon-only) .ui-stat-label {
     color: rgba(255, 87, 34, 0.75); }
 
 .ui-statsbar .ui-stat.orange {
-  color: #ff5722;
-  background: auto; }
-  .ui-statsbar .ui-stat.orange .ui-stat-label {
-    color: rgba(255, 87, 34, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.orange .ui-icon {
+    color: #ff5722 !important; }
+  .ui-statsbar .ui-stat.orange:not(.icon-only) .ui-stat-value {
+    color: #ff5722 !important; }
+  .ui-statsbar .ui-stat.orange:not(.icon-only) .ui-stat-label {
+    color: rgba(255, 87, 34, 0.75) !important; }
 
 .ui-toast.orange {
   background: #ff5722;
@@ -4754,6 +4932,10 @@
   color: #ecf0f1;
   background: #ff5722; }
 
+.ui-badge.orange:after {
+  color: #ecf0f1;
+  background: #ff5722; }
+
 .ui-ribbon.orange {
   color: #ecf0f1;
   background: #ff5722; }
@@ -4843,29 +5025,39 @@
 
 .ui-statsbar.brown-bg {
   background: #795548; }
-  .ui-statsbar.brown-bg .ui-stat {
+  .ui-statsbar.brown-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.brown-bg .ui-stat-label {
+  .ui-statsbar.brown-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.brown-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.brown-bg {
-  color: #ecf0f1;
-  background: #795548; }
-  .ui-statsbar .ui-stat.brown-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #795548 !important; }
+  .ui-statsbar .ui-stat.brown-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.brown-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.brown-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.brown {
   background: auto; }
-  .ui-statsbar.brown .ui-stat {
+  .ui-statsbar.brown .ui-stat .ui-icon {
     color: #795548; }
-  .ui-statsbar.brown .ui-stat-label {
+  .ui-statsbar.brown:not(.icon-only) .ui-stat-value {
+    color: #795548; }
+  .ui-statsbar.brown:not(.icon-only) .ui-stat-label {
     color: rgba(121, 85, 72, 0.75); }
 
 .ui-statsbar .ui-stat.brown {
-  color: #795548;
-  background: auto; }
-  .ui-statsbar .ui-stat.brown .ui-stat-label {
-    color: rgba(121, 85, 72, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.brown .ui-icon {
+    color: #795548 !important; }
+  .ui-statsbar .ui-stat.brown:not(.icon-only) .ui-stat-value {
+    color: #795548 !important; }
+  .ui-statsbar .ui-stat.brown:not(.icon-only) .ui-stat-label {
+    color: rgba(121, 85, 72, 0.75) !important; }
 
 .ui-toast.brown {
   background: #795548;
@@ -5123,6 +5315,10 @@
   color: #ecf0f1;
   background: #795548; }
 
+.ui-badge.brown:after {
+  color: #ecf0f1;
+  background: #795548; }
+
 .ui-ribbon.brown {
   color: #ecf0f1;
   background: #795548; }
@@ -5212,29 +5408,39 @@
 
 .ui-statsbar.lightGray-bg {
   background: #bdc3c7; }
-  .ui-statsbar.lightGray-bg .ui-stat {
+  .ui-statsbar.lightGray-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.lightGray-bg .ui-stat-label {
+  .ui-statsbar.lightGray-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.lightGray-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.lightGray-bg {
-  color: #ecf0f1;
-  background: #bdc3c7; }
-  .ui-statsbar .ui-stat.lightGray-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #bdc3c7 !important; }
+  .ui-statsbar .ui-stat.lightGray-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.lightGray-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.lightGray-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.lightGray {
   background: auto; }
-  .ui-statsbar.lightGray .ui-stat {
+  .ui-statsbar.lightGray .ui-stat .ui-icon {
     color: #bdc3c7; }
-  .ui-statsbar.lightGray .ui-stat-label {
+  .ui-statsbar.lightGray:not(.icon-only) .ui-stat-value {
+    color: #bdc3c7; }
+  .ui-statsbar.lightGray:not(.icon-only) .ui-stat-label {
     color: rgba(189, 195, 199, 0.75); }
 
 .ui-statsbar .ui-stat.lightGray {
-  color: #bdc3c7;
-  background: auto; }
-  .ui-statsbar .ui-stat.lightGray .ui-stat-label {
-    color: rgba(189, 195, 199, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.lightGray .ui-icon {
+    color: #bdc3c7 !important; }
+  .ui-statsbar .ui-stat.lightGray:not(.icon-only) .ui-stat-value {
+    color: #bdc3c7 !important; }
+  .ui-statsbar .ui-stat.lightGray:not(.icon-only) .ui-stat-label {
+    color: rgba(189, 195, 199, 0.75) !important; }
 
 .ui-toast.lightGray {
   background: #bdc3c7;
@@ -5492,6 +5698,10 @@
   color: #ecf0f1;
   background: #bdc3c7; }
 
+.ui-badge.lightGray:after {
+  color: #ecf0f1;
+  background: #bdc3c7; }
+
 .ui-ribbon.lightGray {
   color: #ecf0f1;
   background: #bdc3c7; }
@@ -5581,29 +5791,39 @@
 
 .ui-statsbar.darkGray-bg {
   background: #7f8c8d; }
-  .ui-statsbar.darkGray-bg .ui-stat {
+  .ui-statsbar.darkGray-bg .ui-stat .ui-icon {
     color: #ecf0f1; }
-  .ui-statsbar.darkGray-bg .ui-stat-label {
+  .ui-statsbar.darkGray-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1; }
+  .ui-statsbar.darkGray-bg:not(.icon-only) .ui-stat-label {
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.darkGray-bg {
-  color: #ecf0f1;
-  background: #7f8c8d; }
-  .ui-statsbar .ui-stat.darkGray-bg .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75); }
+  background: #7f8c8d !important; }
+  .ui-statsbar .ui-stat.darkGray-bg .ui-icon {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.darkGray-bg:not(.icon-only) .ui-stat-value {
+    color: #ecf0f1 !important; }
+  .ui-statsbar .ui-stat.darkGray-bg:not(.icon-only) .ui-stat-label {
+    color: rgba(236, 240, 241, 0.75) !important; }
 
 .ui-statsbar.darkGray {
   background: auto; }
-  .ui-statsbar.darkGray .ui-stat {
+  .ui-statsbar.darkGray .ui-stat .ui-icon {
     color: #7f8c8d; }
-  .ui-statsbar.darkGray .ui-stat-label {
+  .ui-statsbar.darkGray:not(.icon-only) .ui-stat-value {
+    color: #7f8c8d; }
+  .ui-statsbar.darkGray:not(.icon-only) .ui-stat-label {
     color: rgba(127, 140, 141, 0.75); }
 
 .ui-statsbar .ui-stat.darkGray {
-  color: #7f8c8d;
-  background: auto; }
-  .ui-statsbar .ui-stat.darkGray .ui-stat-label {
-    color: rgba(127, 140, 141, 0.75); }
+  background: auto !important; }
+  .ui-statsbar .ui-stat.darkGray .ui-icon {
+    color: #7f8c8d !important; }
+  .ui-statsbar .ui-stat.darkGray:not(.icon-only) .ui-stat-value {
+    color: #7f8c8d !important; }
+  .ui-statsbar .ui-stat.darkGray:not(.icon-only) .ui-stat-label {
+    color: rgba(127, 140, 141, 0.75) !important; }
 
 .ui-toast.darkGray {
   background: #7f8c8d;
@@ -5858,6 +6078,10 @@
   border-right-color: #d3d7d7; }
 
 .ui-chip.darkGray .ui-chip-label {
+  color: #ecf0f1;
+  background: #7f8c8d; }
+
+.ui-badge.darkGray:after {
   color: #ecf0f1;
   background: #7f8c8d; }
 

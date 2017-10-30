@@ -71,7 +71,7 @@ export class App {
       }, {
         route: 'toolbar', moduleId: './components/toolbar', title: 'Toolbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:toolbar'
       }, {
-        route: 'statsbar', moduleId: './components/statsbar', title: 'Statsbar', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:statsbar'
+        route: 'statsbar', moduleId: './components/statsbar', title: 'Statsbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:statsbar'
       }, {
         route: 'panels', moduleId: './components/panels', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:panels'
       }, {
