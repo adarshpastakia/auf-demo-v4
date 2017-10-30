@@ -5,7 +5,7 @@
 -->
 <template>
   <ui-page animate>
-    <x-container source.bind="source" wiki.bind="wiki" page-title="UIButton">
+    <x-container source.bind="source" wiki.bind="wiki" page-title="Buttons">
       <h4 class="x-title">Themes</h4>
       <ui-row class="ui-titlecase">
         <ui-button width="8em" repeat.for="c of themes" theme.bind="c">${c}</ui-button>
@@ -20,19 +20,19 @@
       <h6 class="x-title">Sizes</h6>
       <ui-row bottom class="x-cards">
         <ui-column auto>
-          <ui-button small badge="9">Click</ui-button>
+          <ui-button width="7em" small badge="amount:9;theme:blue">Click</ui-button>
           <p>small</p>
         </ui-column>
         <ui-column auto>
-          <ui-button normal badge="9">Click</ui-button>
+          <ui-button width="7em" normal badge-primary="9">Click</ui-button>
           <p>normal</p>
         </ui-column>
         <ui-column auto>
-          <ui-button large badge="9">Click</ui-button>
+          <ui-button width="7em" large badge-primary="9">Click</ui-button>
           <p>large</p>
         </ui-column>
         <ui-column auto>
-          <ui-button xlarge badge="9">Click</ui-button>
+          <ui-button width="7em" xlarge badge-primary="9">Click</ui-button>
           <p>xlarge</p>
         </ui-column>
       </ui-row>
@@ -76,14 +76,14 @@
           <p>dropdown</p>
         </ui-column>
         <ui-column auto>
-          <ui-button width="10em" glyph="glyph-icon-page" split theme="success" split-theme="green" dropdown.bind="btnMenu">Click</ui-button>
+          <ui-button width="10em" glyph="glyph-icon-page" split theme="success" split-theme="green" dropdown.bind="btnMenuColumned">Click</ui-button>
           <p>split</p>
         </ui-column>
         <ui-column auto>
           <ui-button-group separator="or">
-            <ui-button success width="">Proceed</ui-button>
-            <ui-button info width="">Recheck</ui-button>
-            <ui-button danger width="">Cancel</ui-button>
+            <ui-button width="7em" success width="">Proceed</ui-button>
+            <ui-button width="7em" info width="">Recheck</ui-button>
+            <ui-button width="7em" danger width="">Cancel</ui-button>
           </ui-button-group>
           <p>grouped with separator</p>
         </ui-column>
@@ -101,6 +101,36 @@
         <ui-menu-section>Options</ui-menu-section>
         <ui-menu-item glyph="icon-moon-bubbles4">Notifications</ui-menu-item>
         <ui-menu-item glyph="icon-moon-cog">Settings</ui-menu-item>
+      </ui-menu>
+
+      <ui-menu ref="btnMenuColumned">
+        <ui-row>
+          <ui-column>
+            <ui-menu-section>Actions</ui-menu-section>
+            <ui-menu-item glyph="icon-moon-pencil2">Edit</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-search">Search</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-bin">Delete</ui-menu-item>
+            <ui-menu-section>Options</ui-menu-section>
+            <ui-menu-item glyph="icon-moon-bubbles4">Notifications</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-cog">Settings</ui-menu-item>
+          </ui-column>
+          <ui-column>
+            <ui-menu-section>Social Networking</ui-menu-section>
+            <ui-menu-item glyph="icon-moon-google-plus">Google</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-facebook">Facebook</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-twitter">Twitter</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-linkedin2">LinkedIn</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-instagram">Instagram</ui-menu-item>
+          </ui-column>
+          <ui-column>
+            <ui-menu-section>Other Sites</ui-menu-section>
+            <ui-menu-item glyph="icon-moon-yahoo2">Yahoo!</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-youtube">YouTube</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-dribbble">Dribbble</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-flickr">Flickr</ui-menu-item>
+            <ui-menu-item glyph="icon-moon-pinterest">Pinterest</ui-menu-item>
+          </ui-column>
+        </ui-row>
       </ui-menu>
 
       <h4 class="x-title">Button Groups</h4>

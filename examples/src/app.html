@@ -13,10 +13,9 @@
         </ui-column>
       </ui-row>
     </a>
-    <hr/>
     <ui-menu>
-      <ui-menu-group label.bind="routes.key" repeat.for="routes of router.navigation | group:'settings.section'" collapsible>
-        <ui-menu-item repeat.for="route of routes.items" href.bind="route.href" active.bind="route.isActive" icon.bind="route.settings.icon" disabled.bind="route.settings.disabled">${route.settings.title || route.title}</ui-menu-item>
+      <ui-menu-group label.bind="routes.key" repeat.for="routes of router.navigation | group:'settings.section'" collapsible.bind="!!routes.key">
+        <ui-menu-item repeat.for="route of routes.items" href.bind="route.href" active.bind="app.routeActive(route, router.currentInstruction)" icon.bind="route.settings.icon" disabled.bind="route.settings.disabled">${route.settings.title || route.title}</ui-menu-item>
       </ui-menu-group>
     </ui-menu>
   </ui-drawer>
@@ -24,7 +23,7 @@
   <ui-viewport ribbon="message:v4 Work in Progress;theme:blue">
     <ui-app-header>
       <ui-drawer-toggle drawer.bind="appDrawer"></ui-drawer-toggle>
-      <ui-app-title href="#/" class="${router.currentInstruction.fragment=='/'?'x-hide':''}" src="examples/images/logo.png">${constants.Title}</ui-app-title>
+      <ui-app-title href="#/" class="${hideTitle && router.currentInstruction.fragment=='/'?'x-hide':''}" src="examples/images/logo.png">${constants.Title}</ui-app-title>
     </ui-app-header>
 
     <ui-router-view></ui-router-view>
@@ -34,11 +33,11 @@
         <small>Version ${constants.Version}</small>
       </span>
       <div>
-        <a class="ui-link ui-hover-warning" href="#" css.bind="{fontSize: '2rem'}">
+        <a class="ui-link ui-hover-warning" href="https://stackoverflow.com/questions/tagged/aurelia-ui-framework" target="_blank" css.bind="{fontSize: '2rem'}">
           <ui-glyph glyph="icon-moon-stackoverflow"></ui-glyph>
         </a>
         <span css.bind="{fontSize: '2rem'}">&nbsp;&nbsp;</span>
-        <a class="ui-link ui-hover-info" href="#" css.bind="{fontSize: '2rem'}">
+        <a class="ui-link ui-hover-info" href="https://github.com/adarshpastakia/aurelia-ui-framework" target="_blank" css.bind="{fontSize: '2rem'}">
           <ui-glyph glyph="icon-moon-github"></ui-glyph>
         </a>
         <span css.bind="{fontSize: '2rem'}">&nbsp;&nbsp;</span>

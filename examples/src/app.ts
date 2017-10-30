@@ -5,13 +5,15 @@
 // @license     : MIT
 import { autoinject } from 'aurelia-framework';
 import { Router, RouterConfiguration } from 'aurelia-router';
-import { UIConstants } from 'aurelia-ui-framework';
+import { UIConstants, UIApplication, UIEvent } from 'aurelia-ui-framework';
 import environment from '../environment';
 
 @autoinject()
 export class App {
   router: Router;
   constants = UIConstants;
+
+  constructor(public app: UIApplication) { }
 
   configureRouter(config: RouterConfiguration, router: Router) {
     this.router = router;
@@ -24,6 +26,10 @@ export class App {
         route: ['', 'home'], moduleId: './home/view', nav: false, auth: false, name: 'home'
       }, {
         route: '404', moduleId: './home/unknown', nav: false, auth: false, name: '404'
+      }, {
+        route: 'docs', moduleId: './home/unknown', title: 'Getting Started', nav: true, auth: false, name: 'docs', settings: { section: '' }
+      }, {
+        route: 'examples', moduleId: './home/unknown', title: 'Examples', nav: true, auth: false, name: 'examples', settings: { section: '' }
       }, {
         route: 'styles/*path', moduleId: './styles/view', title: 'Styling', nav: false, auth: false, name: 'styles'
       }, {
@@ -45,43 +51,48 @@ export class App {
       }, {
         route: 'buttons', moduleId: './inputs/buttons', title: 'Buttons', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:buttons'
       }, {
-        route: 'text', moduleId: './inputs/text', title: 'Textual Inputs', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:text'
+        route: 'text', moduleId: './inputs/text', title: 'Textual Inputs', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:text'
       }, {
-        route: 'lists', moduleId: './inputs/lists', title: 'Lists & Selects', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:lists'
+        route: 'lists', moduleId: './inputs/lists', title: 'Lists & Selects', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:lists'
       }, {
-        route: 'datetime', moduleId: './inputs/datetime', title: 'Date/Time', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:datetime'
+        route: 'datetime', moduleId: './inputs/datetime', title: 'Date/Time', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:datetime'
       }, {
-        route: 'options', moduleId: './inputs/options', title: 'Options & Switches', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:options'
+        route: 'options', moduleId: './inputs/options', title: 'Options & Switches', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:options'
       }, {
-        route: 'content', moduleId: './inputs/content', title: 'Content Editor', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:content'
+        route: 'content', moduleId: './inputs/content', title: 'Content Editor', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:content'
       }, {
-        route: 'validation', moduleId: './inputs/validation', title: 'Validations', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:validation'
+        route: 'validation', moduleId: './inputs/validation', title: 'Validations', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:validation'
       }, {
-        route: 'drawer', moduleId: './components/drawer', title: 'Drawer', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
+        route: 'drawer', moduleId: './components/drawer', title: 'Drawer', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:buttons'
       }, {
-        route: 'sidebar', moduleId: './components/sidebar', title: 'Sidebar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
+        route: 'sidebar', moduleId: './components/sidebar', title: 'Sidebar', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:buttons'
       }, {
         route: 'menu', moduleId: './components/menu', title: 'Menus', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:menu'
       }, {
         route: 'toolbar', moduleId: './components/toolbar', title: 'Toolbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:toolbar'
       }, {
-        route: 'statsbar', moduleId: './components/statsbar', title: 'Statsbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:statsbar'
+        route: 'statsbar', moduleId: './components/statsbar', title: 'Statsbar', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:statsbar'
       }, {
-        route: 'panels', moduleId: './components/panels', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:panels'
+        route: 'panels', moduleId: './components/panels', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:panels'
       }, {
-        route: 'tabs', moduleId: './components/tabs', title: 'Tab Panel', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:tabs'
+        route: 'tabs', moduleId: './components/tabs', title: 'Tab Panel', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:tabs'
       }, {
-        route: 'tree', moduleId: './components/tree', title: 'Tree Panel', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:tree'
+        route: 'tree', moduleId: './components/tree', title: 'Tree Panel', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:tree'
       }, {
-        route: 'datagrid', moduleId: './components/datagrid', title: 'Datagrid', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:datagrid'
+        route: 'datagrid', moduleId: './components/datagrid', title: 'Datagrid', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:datagrid'
       }, {
-        route: 'breadcrumbs', moduleId: './components/breadcrumbs', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:breadcrumbs'
+        route: 'breadcrumbs', moduleId: './components/breadcrumbs', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:breadcrumbs'
       }, {
-        route: 'dialogs', moduleId: './components/dialogs', title: 'Dialogs', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:dialogs'
+        route: 'dialogs', moduleId: './components/dialogs', title: 'Dialogs', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:dialogs'
       }, {
-        route: 'alerts', moduleId: './components/alerts', title: 'Alerts & Toasts', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:alerts'
+        route: 'alerts', moduleId: './components/alerts', title: 'Alerts & Toasts', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:alerts'
       }
     ]);
   }
 
+  hideTitle = false;
+
+  activate() {
+    UIEvent.subscribe('hidetitle', b => this.hideTitle = b);
+  }
 }

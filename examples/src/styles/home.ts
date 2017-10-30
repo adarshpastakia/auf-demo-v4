@@ -4,21 +4,16 @@
 // @copyright   : 2017
 // @license     : MIT
 import { autoinject } from 'aurelia-framework';
-import { UIConstants } from 'aurelia-ui-framework';
+import { UIConstants, UIHttpService } from 'aurelia-ui-framework';
 
 @autoinject()
 export class StylesHome {
-  constructor() { }
+  constructor(public httpClient: UIHttpService) { }
 
-  // aurelia hooks
-  // canActivate(model) { return true; }
-  // activate(model) { return true; }
-  // bind(bindingContext) { }
-  // attached() { }
-  // detached() { }
-  // unbind() { }
-  // deactivate() { }
-  // end aurelia hooks
+  wiki;
+  activate() {
+    this.httpClient.text('wiki/styles/overview.md').then(md => this.wiki = md);
+  }
   themes = UIConstants['themes'].split(',');
   colors = UIConstants['colors'].split(',');
 

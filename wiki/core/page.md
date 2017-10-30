@@ -44,5 +44,4 @@ Loader overlay
   * Size attribute
     * `small`
     * `normal`
-    * `big`
     * `large`

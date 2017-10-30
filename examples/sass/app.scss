@@ -36,7 +36,7 @@
 .x-cards p {
   font-size : 0.8em;
   text-align: center;
-  color     : $gray;
+  color     : $muted;
 }
 
 .x-banner {
@@ -99,7 +99,7 @@
 }
 
 .x-title {
-  color      : $gray;
+  color      : $muted;
   margin     : 1em 0 0.5em !important;
   font-weight: 400;
 }
@@ -178,7 +178,7 @@ h4.x-title {
       content: '#{$grid-xl-min}';
     }
     height    : 100%;
-    background: lighten($gray, 50%);
+    background: lighten($muted, 50%);
   }
 
   .x-lg {

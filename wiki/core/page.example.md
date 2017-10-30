@@ -2,11 +2,12 @@
 
 ```html
 <ui-page page-title="My Title">
+  <ui-loader busy.bind="true" large></ui-loader>
 
   <ui-content scroll padded>
     <h1 class="ui-display-2">Page content goes here</h1>
   </ui-content>
-  
+
 </ui-page>
 ```
 

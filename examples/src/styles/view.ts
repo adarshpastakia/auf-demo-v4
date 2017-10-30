@@ -41,7 +41,7 @@ export class StylesView {
       }, {
         route: 'glyphs',
         moduleId: './glyphs',
-        title: 'Icon Glyphs',
+        title: 'SVG Glyphs',
         nav: true,
         auth: false,
         name: 'glyphs'

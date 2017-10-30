@@ -5,18 +5,18 @@
 -->
 <template>
   <ui-page animate>
-    <x-container page-title="Glyphs">
+    <x-container page-title="SVG Glyphs">
       <style>
         .glyph-card {
           display: inline-block;
           border-radius: 0.5em;
           margin: 0.5em;
-          width: 128px;
-          height: 128px;
+          width: 8rem;
+          height: 8rem;
           text-align: center;
         }
         .glyph-card .ui-icon {
-          margin: 1rem auto;
+          margin: 1.5rem auto;
           font-size: 2rem;
         }
         .glyph-card .name {
@@ -47,7 +47,7 @@
       </div>
       <h4 class="x-title">Add-On Glyphs</h4>
       <h6 class="x-title">
-        <a href="https://icomoon.io" target="_blank">Icomoon Icons</a>
+        <a href="https://icomoon.io" target="_blank" class="ui-external">Icomoon Icons</a>
       </h6>
       <ui-row>
         <div class="glyph-card ui-border-all ui-border-light" repeat.for="c of fIcomoon | sort">
@@ -56,7 +56,7 @@
         </div>
       </ui-row>
       <h6 class="x-title">
-        <a href="http://hawcons.com" target="_blank">Hawcons Linear Icons</a>
+        <a href="http://hawcons.com" target="_blank" class="ui-external">Hawcons Linear Icons</a>
       </h6>
       <ui-row>
         <div class="glyph-card ui-border-all ui-border-light" repeat.for="c of fHawLine | sort">
@@ -65,7 +65,7 @@
         </div>
       </ui-row>
       <h6 class="x-title">
-        <a href="http://hawcons.com" target="_blank">Hawcons Filled Icons</a>
+        <a href="http://hawcons.com" target="_blank" class="ui-external">Hawcons Filled Icons</a>
       </h6>
       <ui-row>
         <div class="glyph-card ui-border-all ui-border-light" repeat.for="c of fHawFill | sort">

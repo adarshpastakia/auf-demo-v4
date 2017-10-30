@@ -5,7 +5,7 @@
 -->
 <template>
   <ui-page animate>
-    <x-container source.bind="source" wiki.bind="wiki" page-title="UIPage">
+    <x-container source.bind="source" wiki.bind="wiki" page-title="Page Layouts">
       <h4 class="x-title">Simple Page</h4>
       <div class="x-view">
         <ui-page page-title="My Title">
@@ -26,6 +26,7 @@
               <compose view="../home/lipsum-small.html"></compose>
             </ui-content>
             <ui-sidebar position="end" collapsible label="Sidebar" padded scroll>
+              <ui-loader busy.bind="true" large></ui-loader>
               <compose view="../home/lipsum-small.html"></compose>
             </ui-sidebar>
           </ui-section>
@@ -39,10 +40,10 @@
             <ui-content padded scroll>
               <compose view="../home/lipsum-big.html"></compose>
             </ui-content>
-            <ui-row end middle class="ui-bg-light">
+            <ui-toolbar>
               <ui-button dark>Save</ui-button>
               <ui-button>Cancel</ui-button>
-            </ui-row>
+            </ui-toolbar>
           </ui-section>
         </ui-page>
       </div>
@@ -62,15 +63,14 @@
                 <compose view="../home/lipsum-small.html"></compose>
               </ui-sidebar>
             </ui-section>
-            <ui-row end middle class="ui-bg-light">
+            <ui-toolbar>
               <ui-button dark>Save</ui-button>
               <ui-button>Cancel</ui-button>
-            </ui-row>
+            </ui-toolbar>
           </ui-section>
         </ui-page>
       </div>
 
-      <br/><br/>
     </x-container>
   </x-page>
 </template>

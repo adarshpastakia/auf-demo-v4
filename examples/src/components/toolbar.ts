@@ -3,16 +3,19 @@
 // @author      : Adarsh Pastakia
 // @copyright   : 2017
 // @license     : MIT
+
 import { autoinject } from 'aurelia-framework';
 import { UIHttpService } from 'aurelia-ui-framework';
 
 @autoinject()
-export class StyleTypo {
+export class Buttons {
   constructor(public httpClient: UIHttpService) { }
 
-  wiki;
-  activate() {
-    this.httpClient.text('wiki/styles/typography.md').then(md => this.wiki = md);
-  }
+  wiki = '';
+  source = '';
 
+  activate() {
+    this.httpClient.text('wiki/components/toolbar.md').then(md => this.wiki = md);
+    this.httpClient.text('wiki/components/toolbar.example.md').then(md => this.source = md);
+  }
 }
