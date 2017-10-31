@@ -24,15 +24,15 @@
           <p>small</p>
         </ui-column>
         <ui-column auto>
-          <ui-button width="7em" normal badge-primary="9">Click</ui-button>
+          <ui-button width="7em" normal badge-success="9">Click</ui-button>
           <p>normal</p>
         </ui-column>
         <ui-column auto>
-          <ui-button width="7em" large badge-primary="9">Click</ui-button>
+          <ui-button width="7em" large badge-info="9">Click</ui-button>
           <p>large</p>
         </ui-column>
         <ui-column auto>
-          <ui-button width="7em" xlarge badge-primary="9">Click</ui-button>
+          <ui-button width="7em" xlarge badge-danger="9">Click</ui-button>
           <p>xlarge</p>
         </ui-column>
       </ui-row>
@@ -69,6 +69,22 @@
         </ui-column>
       </ui-row>
 
+      <h6 class="x-title">Badges</h6>
+      <ui-row bottom class="x-cards">
+        <ui-column auto>
+          <ui-button badge="amount:9;theme:blue">Click</ui-button>
+        </ui-column>
+        <ui-column auto>
+          <ui-button width="7em" badge-dark="9">Click</ui-button>
+        </ui-column>
+        <ui-column auto>
+          <ui-button width="7em" badge-primary="9" glyph="glyph-icon-page" icon-hilight>Click</ui-button>
+        </ui-column>
+        <ui-column auto>
+          <ui-button width="7em" badge-secondary="9" glyph="glyph-icon-page" icon-hilight icon-end>Click</ui-button>
+        </ui-column>
+      </ui-row>
+
       <h6 class="x-title">Other Variants</h6>
       <ui-row middle class="x-cards">
         <ui-column auto>
@@ -88,7 +104,9 @@
           <p>grouped with separator</p>
         </ui-column>
         <ui-column auto>
-          <ui-button width="7em" busy.bind="isBusy" glyph="glyph-icon-page" icon-hilight theme="info">Click</ui-button><input type="checkbox" checked.bind="isBusy"/>
+          <ui-button width="7em" busy.bind="isBusy" glyph="glyph-icon-page" icon-hilight theme="info">Click</ui-button>
+          <ui-button width="7em" busy.bind="isBusy" glyph="glyph-icon-page" icon-end icon-hilight theme="info">Click</ui-button>
+          <input type="checkbox" checked.bind="isBusy"/>
           <p>busy</p>
         </ui-column>
       </ui-row>

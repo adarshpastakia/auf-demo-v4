@@ -1,4 +1,4 @@
-#### Horizontal Grid
+###### Horizontal Grid
 
 ```html
 <ui-container padded>
@@ -28,7 +28,7 @@
 
 ---
 
-#### Vertical Grid
+###### Vertical Grid
 
 ```html
 <ui-container padded>

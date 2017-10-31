@@ -24,6 +24,7 @@
 </ui-statsbar>
 ```
 
+---
 
 #### Themed Background
 

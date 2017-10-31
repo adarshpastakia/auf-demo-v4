@@ -63,9 +63,9 @@ export class App {
       }, {
         route: 'validation', moduleId: './inputs/validation', title: 'Validations', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:validation'
       }, {
-        route: 'drawer', moduleId: './components/drawer', title: 'Drawer', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:buttons'
+        route: 'drawer', moduleId: './components/drawer', title: 'Drawer', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
       }, {
-        route: 'sidebar', moduleId: './components/sidebar', title: 'Sidebar', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:buttons'
+        route: 'sidebar', moduleId: './components/sidebar', title: 'Sidebar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
       }, {
         route: 'menu', moduleId: './components/menu', title: 'Menus', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:menu'
       }, {

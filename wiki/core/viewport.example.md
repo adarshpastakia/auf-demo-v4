@@ -1,4 +1,4 @@
-#### Simple Viewport
+###### Simple Viewport
 
 ```html
 <ui-viewport appready.trigger="onReady()">
@@ -18,7 +18,7 @@
 </ui-viewport>
 ```
 
-#### Viewport with Navigation Drawer
+###### Viewport with Navigation Drawer
 
 ```html
 <ui-viewport appready.trigger="onReady()" fullscreen>
@@ -42,7 +42,7 @@
 ```
 
 
-#### Viewport with Menubar
+###### Viewport with Menubar
 
 ```html
 <ui-viewport appready.trigger="onReady()">

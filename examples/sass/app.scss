@@ -8,6 +8,37 @@
 
 .x-home-page {}
 
+.ui-splash {
+  background-color: white;
+  z-index         : $z-index-splash;
+  @include position(fixed, 0);
+
+  > div:first-child {
+    background     : url('../images/logo.png') no-repeat left center;
+    padding-left   : 72px;
+    background-size: 64px;
+    font-size      : 32px;
+    font-weight    : bold;
+    color          : $dark;
+    line-height    : 1;
+    width          : 300px;
+    margin         : 40vh auto 32px;
+
+    > small {
+      font-size  : 16px;
+      display    : block;
+      color      : rgba($dark, .75);
+      font-weight: 400;
+    }
+  }
+
+  > div.ui-anim-ripple {
+    display  : block;
+    font-size: 32px;
+    margin   : 0 auto;
+  }
+}
+
 .x-fixed-banner {
   position     : fixed;
   color        : white;
@@ -103,6 +134,7 @@
   margin     : 1em 0 0.5em !important;
   font-weight: 400;
 }
+
 h4.x-title {
   color: $secondary;
 }
@@ -128,6 +160,11 @@ h4.x-title {
 .x-section h4 {
   color : $secondary;
   margin: 1em 0 0.5em !important;
+}
+.x-section h6 {
+  color      : $secondary;
+  margin-top : 1em;
+  font-weight: 300;
 }
 
 .x-section blockquote {

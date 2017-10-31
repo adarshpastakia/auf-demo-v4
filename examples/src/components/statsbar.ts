@@ -8,7 +8,7 @@ import { autoinject } from 'aurelia-framework';
 import { UIHttpService } from 'aurelia-ui-framework';
 
 @autoinject()
-export class Buttons {
+export class Statsbar {
   constructor(public httpClient: UIHttpService) { }
 
   wiki = '';

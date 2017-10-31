@@ -1,4 +1,4 @@
-#### Simple Toolbar
+###### Simple Toolbar
 
 ```html
 <ui-toolbar>
@@ -22,7 +22,7 @@
 </ui-toolbar>
 ```
 
-#### Dark Theme Toolbar
+###### Dark Theme Toolbar
 
 ```html
 <ui-toolbar dark>

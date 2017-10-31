@@ -1,4 +1,4 @@
-#### Simple Page
+###### Simple Page
 
 ```html
 <ui-page page-title="My Title">
@@ -13,7 +13,7 @@
 
 ---
 
-#### Page with Menubar/Toolbar
+###### Page with Menubar/Toolbar
 
 ```html
 <ui-page page-title="My Title">
@@ -35,7 +35,7 @@
 
 ---
 
-#### Page with Sidebar
+###### Page with Sidebar
 
 ```html
 <ui-page page-title="My Title">
@@ -58,7 +58,7 @@
 
 ---
 
-#### Page with multiple sections
+###### Page with multiple sections
 
 ```html
 <ui-page page-title="My Title">

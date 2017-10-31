@@ -5,30 +5,8 @@ Statsbar
   * `small`
   * `vertical`
   * `icon-only`: Apply text theme to icon only
-  * `{theme}`: Statsbar theme
-  * `{background theme}`: Statsbar background theme
-
-* Theme colors
-  * `default`
-  * `dark`
-  * `muted`
-  * `primary`
-  * `secondary`
-  * `info`
-  * `danger`
-  * `success`
-  * `warning`
-
-* Background Theme colors
-  * `default-bg`
-  * `dark-bg`
-  * `muted-bg`
-  * `primary-bg`
-  * `secondary-bg`
-  * `info-bg`
-  * `danger-bg`
-  * `success-bg`
-  * `warning-bg`
+  * `theme = ''`: Statsbar theme
+  * `theme-bg = ''`: Statsbar background theme
 
 ---
 
@@ -39,5 +17,5 @@ Stats Card
   * `glyph = ''`
   * `label = ''`
   * `icon-only`: Apply text theme to icon only
-  * `{theme}`: Stats card theme
-  * `{background theme}`: Stats card background theme
+  * `theme = ''`: Stats card theme
+  * `theme-bg = ''`: Stats card background theme

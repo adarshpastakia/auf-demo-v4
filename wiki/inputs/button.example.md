@@ -1,35 +1,35 @@
-#### Simple Button
+###### Simple Button
 
 ```html
 <ui-button>Click Me</ui-button>
 ```
 
-#### Icon Button
+###### Icon Button
 
 ```html
 <ui-button glyph="glyph-icon-page"></ui-button>
 ```
 
-#### Icon Hilight Button
+###### Icon Hilight Button
 
 ```html
 <ui-button icon-hilight glyph="glyph-icon-page">Click Me!</ui-button>
 ```
 
-#### Icon Top Button
+###### Icon Top Button
 
 ```html
 <ui-button icon-top glyph="glyph-icon-page">Click Me!</ui-button>
 ```
 
-#### Button - Dropdown
+###### Button - Dropdown
 
 ```html
 <ui-button dropdown.ref="menu" glyph="glyph-icon-page">Click Me!</ui-button>
 <ui-menu ref="menu">...</ui-menu>
 ```
 
-#### Button Group
+###### Button Group
 
 ```html
 <ui-button-group>
@@ -40,7 +40,7 @@
 </ui-button-group>
 ```
 
-#### Button Group - Separator
+###### Button Group - Separator
 
 ```html
 <ui-button-group separator="or">
@@ -51,7 +51,7 @@
 ```
 
 
-#### Button Group - Toggle
+###### Button Group - Toggle
 
 ```html
 <ui-button-group value="1" toggle>

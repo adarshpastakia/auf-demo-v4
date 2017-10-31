@@ -1,4 +1,4 @@
-#### Simple Menubar
+###### Simple Menubar
 
 ```html
 <ui-menubar>
@@ -11,7 +11,7 @@
 </ui-menubar>
 ```
 
-#### Menubar with Groups
+###### Menubar with Groups
 
 ```html
 <ui-menubar>
@@ -27,7 +27,7 @@
 </ui-menubar>
 ```
 
-#### Simple Dropdown Menu
+###### Simple Dropdown Menu
 
 ```html
 <ui-button dropdown.ref="menu">Click Me!</ui-button>
@@ -42,7 +42,7 @@
 </ui-menu>
 ```
 
-#### Dropdown Menu with Columns
+###### Dropdown Menu with Columns
 
 ```html
 <ui-button dropdown.ref="menu">Click Me!</ui-button>
@@ -77,7 +77,7 @@
 </ui-menu>
 ```
 
-#### Inline Menu
+###### Inline Menu
 
 ```html
 <ui-menu class="ui-border-all ui-border-light ui-inline">
