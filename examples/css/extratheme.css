@@ -54,13 +54,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-red-bg {
-  background: #ff3b30 !important; }
+  background: #ff3b30; }
   .ui-statsbar .ui-stat.ui-red-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-red-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-red-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-red {
   background: auto; }
@@ -72,13 +72,13 @@
     color: rgba(255, 59, 48, 0.75); }
 
 .ui-statsbar .ui-stat.ui-red {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-red .ui-icon {
-    color: #ff3b30 !important; }
+    color: #ff3b30; }
   .ui-statsbar .ui-stat.ui-red:not(.ui-icon-only) .ui-stat-value {
-    color: #ff3b30 !important; }
+    color: #ff3b30; }
   .ui-statsbar .ui-stat.ui-red:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(255, 59, 48, 0.75) !important; }
+    color: rgba(255, 59, 48, 0.75); }
 
 .ui-toast.ui-red {
   background: #ff3b30;
@@ -437,13 +437,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-pink-bg {
-  background: #e91e63 !important; }
+  background: #e91e63; }
   .ui-statsbar .ui-stat.ui-pink-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-pink-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-pink-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-pink {
   background: auto; }
@@ -455,13 +455,13 @@
     color: rgba(233, 30, 99, 0.75); }
 
 .ui-statsbar .ui-stat.ui-pink {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-pink .ui-icon {
-    color: #e91e63 !important; }
+    color: #e91e63; }
   .ui-statsbar .ui-stat.ui-pink:not(.ui-icon-only) .ui-stat-value {
-    color: #e91e63 !important; }
+    color: #e91e63; }
   .ui-statsbar .ui-stat.ui-pink:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(233, 30, 99, 0.75) !important; }
+    color: rgba(233, 30, 99, 0.75); }
 
 .ui-toast.ui-pink {
   background: #e91e63;
@@ -820,13 +820,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-violet-bg {
-  background: #9c27b0 !important; }
+  background: #9c27b0; }
   .ui-statsbar .ui-stat.ui-violet-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-violet-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-violet-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-violet {
   background: auto; }
@@ -838,13 +838,13 @@
     color: rgba(156, 39, 176, 0.75); }
 
 .ui-statsbar .ui-stat.ui-violet {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-violet .ui-icon {
-    color: #9c27b0 !important; }
+    color: #9c27b0; }
   .ui-statsbar .ui-stat.ui-violet:not(.ui-icon-only) .ui-stat-value {
-    color: #9c27b0 !important; }
+    color: #9c27b0; }
   .ui-statsbar .ui-stat.ui-violet:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(156, 39, 176, 0.75) !important; }
+    color: rgba(156, 39, 176, 0.75); }
 
 .ui-toast.ui-violet {
   background: #9c27b0;
@@ -1203,13 +1203,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-purple-bg {
-  background: #673ab7 !important; }
+  background: #673ab7; }
   .ui-statsbar .ui-stat.ui-purple-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-purple-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-purple-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-purple {
   background: auto; }
@@ -1221,13 +1221,13 @@
     color: rgba(103, 58, 183, 0.75); }
 
 .ui-statsbar .ui-stat.ui-purple {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-purple .ui-icon {
-    color: #673ab7 !important; }
+    color: #673ab7; }
   .ui-statsbar .ui-stat.ui-purple:not(.ui-icon-only) .ui-stat-value {
-    color: #673ab7 !important; }
+    color: #673ab7; }
   .ui-statsbar .ui-stat.ui-purple:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(103, 58, 183, 0.75) !important; }
+    color: rgba(103, 58, 183, 0.75); }
 
 .ui-toast.ui-purple {
   background: #673ab7;
@@ -1586,13 +1586,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-indigo-bg {
-  background: #3f51b5 !important; }
+  background: #3f51b5; }
   .ui-statsbar .ui-stat.ui-indigo-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-indigo-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-indigo-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-indigo {
   background: auto; }
@@ -1604,13 +1604,13 @@
     color: rgba(63, 81, 181, 0.75); }
 
 .ui-statsbar .ui-stat.ui-indigo {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-indigo .ui-icon {
-    color: #3f51b5 !important; }
+    color: #3f51b5; }
   .ui-statsbar .ui-stat.ui-indigo:not(.ui-icon-only) .ui-stat-value {
-    color: #3f51b5 !important; }
+    color: #3f51b5; }
   .ui-statsbar .ui-stat.ui-indigo:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(63, 81, 181, 0.75) !important; }
+    color: rgba(63, 81, 181, 0.75); }
 
 .ui-toast.ui-indigo {
   background: #3f51b5;
@@ -1969,13 +1969,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-blue-bg {
-  background: #2196f3 !important; }
+  background: #2196f3; }
   .ui-statsbar .ui-stat.ui-blue-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-blue-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-blue-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-blue {
   background: auto; }
@@ -1987,13 +1987,13 @@
     color: rgba(33, 150, 243, 0.75); }
 
 .ui-statsbar .ui-stat.ui-blue {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-blue .ui-icon {
-    color: #2196f3 !important; }
+    color: #2196f3; }
   .ui-statsbar .ui-stat.ui-blue:not(.ui-icon-only) .ui-stat-value {
-    color: #2196f3 !important; }
+    color: #2196f3; }
   .ui-statsbar .ui-stat.ui-blue:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(33, 150, 243, 0.75) !important; }
+    color: rgba(33, 150, 243, 0.75); }
 
 .ui-toast.ui-blue {
   background: #2196f3;
@@ -2352,13 +2352,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-cyan-bg {
-  background: #00bcd4 !important; }
+  background: #00bcd4; }
   .ui-statsbar .ui-stat.ui-cyan-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-cyan-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-cyan-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-cyan {
   background: auto; }
@@ -2370,13 +2370,13 @@
     color: rgba(0, 188, 212, 0.75); }
 
 .ui-statsbar .ui-stat.ui-cyan {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-cyan .ui-icon {
-    color: #00bcd4 !important; }
+    color: #00bcd4; }
   .ui-statsbar .ui-stat.ui-cyan:not(.ui-icon-only) .ui-stat-value {
-    color: #00bcd4 !important; }
+    color: #00bcd4; }
   .ui-statsbar .ui-stat.ui-cyan:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(0, 188, 212, 0.75) !important; }
+    color: rgba(0, 188, 212, 0.75); }
 
 .ui-toast.ui-cyan {
   background: #00bcd4;
@@ -2735,13 +2735,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-teal-bg {
-  background: #009688 !important; }
+  background: #009688; }
   .ui-statsbar .ui-stat.ui-teal-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-teal-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-teal-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-teal {
   background: auto; }
@@ -2753,13 +2753,13 @@
     color: rgba(0, 150, 136, 0.75); }
 
 .ui-statsbar .ui-stat.ui-teal {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-teal .ui-icon {
-    color: #009688 !important; }
+    color: #009688; }
   .ui-statsbar .ui-stat.ui-teal:not(.ui-icon-only) .ui-stat-value {
-    color: #009688 !important; }
+    color: #009688; }
   .ui-statsbar .ui-stat.ui-teal:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(0, 150, 136, 0.75) !important; }
+    color: rgba(0, 150, 136, 0.75); }
 
 .ui-toast.ui-teal {
   background: #009688;
@@ -3118,13 +3118,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-green-bg {
-  background: #4caf50 !important; }
+  background: #4caf50; }
   .ui-statsbar .ui-stat.ui-green-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-green-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-green-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-green {
   background: auto; }
@@ -3136,13 +3136,13 @@
     color: rgba(76, 175, 80, 0.75); }
 
 .ui-statsbar .ui-stat.ui-green {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-green .ui-icon {
-    color: #4caf50 !important; }
+    color: #4caf50; }
   .ui-statsbar .ui-stat.ui-green:not(.ui-icon-only) .ui-stat-value {
-    color: #4caf50 !important; }
+    color: #4caf50; }
   .ui-statsbar .ui-stat.ui-green:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(76, 175, 80, 0.75) !important; }
+    color: rgba(76, 175, 80, 0.75); }
 
 .ui-toast.ui-green {
   background: #4caf50;
@@ -3501,13 +3501,13 @@
     color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar .ui-stat.ui-lime-bg {
-  background: #cddc39 !important; }
+  background: #cddc39; }
   .ui-statsbar .ui-stat.ui-lime-bg .ui-icon {
-    color: #34495e !important; }
+    color: #34495e; }
   .ui-statsbar .ui-stat.ui-lime-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #34495e !important; }
+    color: #34495e; }
   .ui-statsbar .ui-stat.ui-lime-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(52, 73, 94, 0.75) !important; }
+    color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar.ui-lime {
   background: auto; }
@@ -3519,13 +3519,13 @@
     color: rgba(205, 220, 57, 0.75); }
 
 .ui-statsbar .ui-stat.ui-lime {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-lime .ui-icon {
-    color: #cddc39 !important; }
+    color: #cddc39; }
   .ui-statsbar .ui-stat.ui-lime:not(.ui-icon-only) .ui-stat-value {
-    color: #cddc39 !important; }
+    color: #cddc39; }
   .ui-statsbar .ui-stat.ui-lime:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(205, 220, 57, 0.75) !important; }
+    color: rgba(205, 220, 57, 0.75); }
 
 .ui-toast.ui-lime {
   background: #cddc39;
@@ -3884,13 +3884,13 @@
     color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar .ui-stat.ui-yellow-bg {
-  background: #ffeb3b !important; }
+  background: #ffeb3b; }
   .ui-statsbar .ui-stat.ui-yellow-bg .ui-icon {
-    color: #34495e !important; }
+    color: #34495e; }
   .ui-statsbar .ui-stat.ui-yellow-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #34495e !important; }
+    color: #34495e; }
   .ui-statsbar .ui-stat.ui-yellow-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(52, 73, 94, 0.75) !important; }
+    color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar.ui-yellow {
   background: auto; }
@@ -3902,13 +3902,13 @@
     color: rgba(255, 235, 59, 0.75); }
 
 .ui-statsbar .ui-stat.ui-yellow {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-yellow .ui-icon {
-    color: #ffeb3b !important; }
+    color: #ffeb3b; }
   .ui-statsbar .ui-stat.ui-yellow:not(.ui-icon-only) .ui-stat-value {
-    color: #ffeb3b !important; }
+    color: #ffeb3b; }
   .ui-statsbar .ui-stat.ui-yellow:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(255, 235, 59, 0.75) !important; }
+    color: rgba(255, 235, 59, 0.75); }
 
 .ui-toast.ui-yellow {
   background: #ffeb3b;
@@ -4267,13 +4267,13 @@
     color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar .ui-stat.ui-amber-bg {
-  background: #ffc107 !important; }
+  background: #ffc107; }
   .ui-statsbar .ui-stat.ui-amber-bg .ui-icon {
-    color: #34495e !important; }
+    color: #34495e; }
   .ui-statsbar .ui-stat.ui-amber-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #34495e !important; }
+    color: #34495e; }
   .ui-statsbar .ui-stat.ui-amber-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(52, 73, 94, 0.75) !important; }
+    color: rgba(52, 73, 94, 0.75); }
 
 .ui-statsbar.ui-amber {
   background: auto; }
@@ -4285,13 +4285,13 @@
     color: rgba(255, 193, 7, 0.75); }
 
 .ui-statsbar .ui-stat.ui-amber {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-amber .ui-icon {
-    color: #ffc107 !important; }
+    color: #ffc107; }
   .ui-statsbar .ui-stat.ui-amber:not(.ui-icon-only) .ui-stat-value {
-    color: #ffc107 !important; }
+    color: #ffc107; }
   .ui-statsbar .ui-stat.ui-amber:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(255, 193, 7, 0.75) !important; }
+    color: rgba(255, 193, 7, 0.75); }
 
 .ui-toast.ui-amber {
   background: #ffc107;
@@ -4650,13 +4650,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-orange-bg {
-  background: #ff5722 !important; }
+  background: #ff5722; }
   .ui-statsbar .ui-stat.ui-orange-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-orange-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-orange-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-orange {
   background: auto; }
@@ -4668,13 +4668,13 @@
     color: rgba(255, 87, 34, 0.75); }
 
 .ui-statsbar .ui-stat.ui-orange {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-orange .ui-icon {
-    color: #ff5722 !important; }
+    color: #ff5722; }
   .ui-statsbar .ui-stat.ui-orange:not(.ui-icon-only) .ui-stat-value {
-    color: #ff5722 !important; }
+    color: #ff5722; }
   .ui-statsbar .ui-stat.ui-orange:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(255, 87, 34, 0.75) !important; }
+    color: rgba(255, 87, 34, 0.75); }
 
 .ui-toast.ui-orange {
   background: #ff5722;
@@ -5033,13 +5033,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-brown-bg {
-  background: #795548 !important; }
+  background: #795548; }
   .ui-statsbar .ui-stat.ui-brown-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-brown-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-brown-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-brown {
   background: auto; }
@@ -5051,13 +5051,13 @@
     color: rgba(121, 85, 72, 0.75); }
 
 .ui-statsbar .ui-stat.ui-brown {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-brown .ui-icon {
-    color: #795548 !important; }
+    color: #795548; }
   .ui-statsbar .ui-stat.ui-brown:not(.ui-icon-only) .ui-stat-value {
-    color: #795548 !important; }
+    color: #795548; }
   .ui-statsbar .ui-stat.ui-brown:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(121, 85, 72, 0.75) !important; }
+    color: rgba(121, 85, 72, 0.75); }
 
 .ui-toast.ui-brown {
   background: #795548;
@@ -5416,13 +5416,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-lightGray-bg {
-  background: #bdc3c7 !important; }
+  background: #bdc3c7; }
   .ui-statsbar .ui-stat.ui-lightGray-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-lightGray-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-lightGray-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-lightGray {
   background: auto; }
@@ -5434,13 +5434,13 @@
     color: rgba(189, 195, 199, 0.75); }
 
 .ui-statsbar .ui-stat.ui-lightGray {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-lightGray .ui-icon {
-    color: #bdc3c7 !important; }
+    color: #bdc3c7; }
   .ui-statsbar .ui-stat.ui-lightGray:not(.ui-icon-only) .ui-stat-value {
-    color: #bdc3c7 !important; }
+    color: #bdc3c7; }
   .ui-statsbar .ui-stat.ui-lightGray:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(189, 195, 199, 0.75) !important; }
+    color: rgba(189, 195, 199, 0.75); }
 
 .ui-toast.ui-lightGray {
   background: #bdc3c7;
@@ -5799,13 +5799,13 @@
     color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar .ui-stat.ui-darkGray-bg {
-  background: #7f8c8d !important; }
+  background: #7f8c8d; }
   .ui-statsbar .ui-stat.ui-darkGray-bg .ui-icon {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-darkGray-bg:not(.ui-icon-only) .ui-stat-value {
-    color: #ecf0f1 !important; }
+    color: #ecf0f1; }
   .ui-statsbar .ui-stat.ui-darkGray-bg:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(236, 240, 241, 0.75) !important; }
+    color: rgba(236, 240, 241, 0.75); }
 
 .ui-statsbar.ui-darkGray {
   background: auto; }
@@ -5817,13 +5817,13 @@
     color: rgba(127, 140, 141, 0.75); }
 
 .ui-statsbar .ui-stat.ui-darkGray {
-  background: auto !important; }
+  background: auto; }
   .ui-statsbar .ui-stat.ui-darkGray .ui-icon {
-    color: #7f8c8d !important; }
+    color: #7f8c8d; }
   .ui-statsbar .ui-stat.ui-darkGray:not(.ui-icon-only) .ui-stat-value {
-    color: #7f8c8d !important; }
+    color: #7f8c8d; }
   .ui-statsbar .ui-stat.ui-darkGray:not(.ui-icon-only) .ui-stat-label {
-    color: rgba(127, 140, 141, 0.75) !important; }
+    color: rgba(127, 140, 141, 0.75); }
 
 .ui-toast.ui-darkGray {
   background: #7f8c8d;
