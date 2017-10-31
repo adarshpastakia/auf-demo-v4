@@ -8,6 +8,21 @@
 
 .x-home-page {}
 
+.x-app-menu {
+  .ui-drawer-close {
+    display: none;
+  }
+
+  .x-app-menu-title {
+    top          : 0;
+    display      : block;
+    z-index      : 2;
+    margin-bottom: 0.5em;
+    background   : $drawer-bg;
+    box-shadow   : 0 0 2em $drawer-bg;
+    @include sticky();
+  }
+}
 
 .ui-splash {
   background-color: white;
@@ -162,6 +177,7 @@ h4.x-title {
   color : $secondary;
   margin: 1em 0 0.5em !important;
 }
+
 .x-section h6 {
   color      : $secondary;
   margin-top : 1em;

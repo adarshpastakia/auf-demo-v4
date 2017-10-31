@@ -97,6 +97,17 @@
             </ui-column>
           </ui-row>
 
+          <hr/>
+          <div class="ui-pad-all">
+            <h4 class="ui-text-primary">API Classes</h4>
+          </div>
+          <ui-row>
+            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'API Classes'">
+              <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+            </ui-column>
+          </ui-row>
+
+          <br/><br/>
         </div>
       </ui-container>
     </div>
