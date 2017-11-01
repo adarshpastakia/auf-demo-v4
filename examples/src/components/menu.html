@@ -5,7 +5,7 @@
 -->
 <template>
   <ui-page animate>
-    <x-container source.bind="source" wiki.bind="wiki" page-title="Menus">
+    <x-container source.bind="source" wiki.bind="wiki" page-title="Menus" need-rtl="true">
       <h4 class="x-title">Menubar</h4>
       <ui-menubar>
         <ui-menu-item active.bind="!mbactive" click.trigger="mbactive=0" glyph="icon-moon-pencil2">Edit</ui-menu-item>
@@ -41,6 +41,13 @@
           <ui-menu-item glyph="icon-moon-pinterest">Pinterest</ui-menu-item>
         </ui-menu-group>
       </ui-menubar>
+      <br/>
+
+      <div class="x-section">
+        <blockquote>
+          <strong>Known Issue</strong>
+          Menubar overflow broken in RTL layout</blockquote>
+      </div>
 
       <hr/>
       <h4 class="x-title">Menus</h4>

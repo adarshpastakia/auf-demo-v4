@@ -5,7 +5,7 @@
 -->
 <template>
   <ui-page animate>
-    <x-container source.bind="source" wiki.bind="wiki" page-title="Buttons">
+    <x-container source.bind="source" wiki.bind="wiki" page-title="Buttons" need-rtl="true">
       <h4 class="x-title">Themes</h4>
       <ui-row class="ui-titlecase">
         <ui-button width="8em" repeat.for="c of themes" theme.bind="c">${c}</ui-button>
@@ -110,6 +110,12 @@
           <p>busy</p>
         </ui-column>
       </ui-row>
+
+      <div class="x-section">
+        <blockquote>
+          <strong>NOTE</strong>
+          For button-group with separator use equal width buttons</blockquote>
+      </div>
 
       <ui-menu ref="btnMenu">
         <ui-menu-section>Actions</ui-menu-section>

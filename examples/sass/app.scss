@@ -185,14 +185,25 @@ h4.x-title {
 }
 
 .x-section blockquote {
-  background: rgba($danger, .05);
+  padding   : 0.5rem 1rem;
+  background: rgba($danger, .025);
+  border    : 1px solid rgba($danger, .25);
+  box-shadow: 4px 4px 0 0 rgba($danger, .75);
+
+  &.success {
+    background: rgba($success, .025);
+    border    : 1px solid rgba($success, .25);
+    box-shadow: 4px 4px 0 0 rgba($success, .75);
+  }
+
+  strong:first-child {
+    color      : $danger;
+    padding    : 0 0.5em;
+    font-weight: 600;
+  }
 
   p:last-child {
     margin-bottom: 0.25em;
-
-    strong:first-child {
-      color: $danger;
-    }
   }
 }
 

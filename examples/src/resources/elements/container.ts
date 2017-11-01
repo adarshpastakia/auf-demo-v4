@@ -12,6 +12,7 @@ export class Container {
   @bindable() pageTitle;
   @bindable() source = '';
   @bindable() wiki = '';
+  @bindable() needRtl = false;
 
   currentView = 0;
 

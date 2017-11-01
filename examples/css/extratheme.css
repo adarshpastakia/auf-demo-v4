@@ -7,14 +7,14 @@
 .ui-border-red {
   border-color: #ff3b30 !important; }
 
-.ui-switch-control.red .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-red .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.red .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-red .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.red .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-red .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #ff3b30; }
-  .ui-switch-control.red .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-red .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-red {
@@ -390,14 +390,14 @@
 .ui-border-pink {
   border-color: #e91e63 !important; }
 
-.ui-switch-control.pink .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-pink .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.pink .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-pink .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.pink .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-pink .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #e91e63; }
-  .ui-switch-control.pink .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-pink .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-pink {
@@ -773,14 +773,14 @@
 .ui-border-violet {
   border-color: #9c27b0 !important; }
 
-.ui-switch-control.violet .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-violet .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.violet .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-violet .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.violet .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-violet .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #9c27b0; }
-  .ui-switch-control.violet .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-violet .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-violet {
@@ -1156,14 +1156,14 @@
 .ui-border-purple {
   border-color: #673ab7 !important; }
 
-.ui-switch-control.purple .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-purple .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.purple .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-purple .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.purple .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-purple .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #673ab7; }
-  .ui-switch-control.purple .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-purple .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-purple {
@@ -1539,14 +1539,14 @@
 .ui-border-indigo {
   border-color: #3f51b5 !important; }
 
-.ui-switch-control.indigo .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-indigo .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.indigo .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-indigo .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.indigo .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-indigo .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #3f51b5; }
-  .ui-switch-control.indigo .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-indigo .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-indigo {
@@ -1922,14 +1922,14 @@
 .ui-border-blue {
   border-color: #2196f3 !important; }
 
-.ui-switch-control.blue .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-blue .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.blue .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-blue .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.blue .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-blue .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #2196f3; }
-  .ui-switch-control.blue .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-blue .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-blue {
@@ -2305,14 +2305,14 @@
 .ui-border-cyan {
   border-color: #00bcd4 !important; }
 
-.ui-switch-control.cyan .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-cyan .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.cyan .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-cyan .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.cyan .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-cyan .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #00bcd4; }
-  .ui-switch-control.cyan .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-cyan .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-cyan {
@@ -2688,14 +2688,14 @@
 .ui-border-teal {
   border-color: #009688 !important; }
 
-.ui-switch-control.teal .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-teal .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.teal .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-teal .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.teal .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-teal .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #009688; }
-  .ui-switch-control.teal .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-teal .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-teal {
@@ -3071,14 +3071,14 @@
 .ui-border-green {
   border-color: #4caf50 !important; }
 
-.ui-switch-control.green .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-green .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.green .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-green .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.green .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-green .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #4caf50; }
-  .ui-switch-control.green .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-green .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-green {
@@ -3454,14 +3454,14 @@
 .ui-border-lime {
   border-color: #cddc39 !important; }
 
-.ui-switch-control.lime .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-lime .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.lime .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-lime .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.lime .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-lime .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #cddc39; }
-  .ui-switch-control.lime .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-lime .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #34495e; }
 
 .ui-toolbar.ui-lime {
@@ -3837,14 +3837,14 @@
 .ui-border-yellow {
   border-color: #ffeb3b !important; }
 
-.ui-switch-control.yellow .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-yellow .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.yellow .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-yellow .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.yellow .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-yellow .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #ffeb3b; }
-  .ui-switch-control.yellow .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-yellow .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #34495e; }
 
 .ui-toolbar.ui-yellow {
@@ -4220,14 +4220,14 @@
 .ui-border-amber {
   border-color: #ffc107 !important; }
 
-.ui-switch-control.amber .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-amber .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.amber .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-amber .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.amber .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-amber .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #ffc107; }
-  .ui-switch-control.amber .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-amber .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #34495e; }
 
 .ui-toolbar.ui-amber {
@@ -4603,14 +4603,14 @@
 .ui-border-orange {
   border-color: #ff5722 !important; }
 
-.ui-switch-control.orange .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-orange .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.orange .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-orange .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.orange .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-orange .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #ff5722; }
-  .ui-switch-control.orange .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-orange .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-orange {
@@ -4986,14 +4986,14 @@
 .ui-border-brown {
   border-color: #795548 !important; }
 
-.ui-switch-control.brown .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-brown .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.brown .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-brown .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.brown .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-brown .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #795548; }
-  .ui-switch-control.brown .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-brown .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-brown {
@@ -5369,14 +5369,14 @@
 .ui-border-lightGray {
   border-color: #bdc3c7 !important; }
 
-.ui-switch-control.lightGray .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-lightGray .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.lightGray .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-lightGray .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.lightGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-lightGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #bdc3c7; }
-  .ui-switch-control.lightGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-lightGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-lightGray {
@@ -5752,14 +5752,14 @@
 .ui-border-darkGray {
   border-color: #7f8c8d !important; }
 
-.ui-switch-control.darkGray .ui-switch > .ui-switch-input ~ .ui-switch-inner {
+.ui-switch-control.ui-darkGray .ui-switch > .ui-switch-input ~ .ui-switch-inner {
   background-color: #ecf0f1; }
-  .ui-switch-control.darkGray .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
+  .ui-switch-control.ui-darkGray .ui-switch > .ui-switch-input ~ .ui-switch-inner:before {
     color: #95a5a6; }
 
-.ui-switch-control.darkGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
+.ui-switch-control.ui-darkGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner {
   background-color: #7f8c8d; }
-  .ui-switch-control.darkGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
+  .ui-switch-control.ui-darkGray .ui-switch > .ui-switch-input:checked ~ .ui-switch-inner:after {
     color: #ecf0f1; }
 
 .ui-toolbar.ui-darkGray {
