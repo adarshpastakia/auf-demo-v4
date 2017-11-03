@@ -20,7 +20,19 @@
   <ui-stat info label="Messages" glyph="icon-moon-bubbles3">9.24K</ui-stat>
   <ui-stat danger label="Likes" glyph="icon-moon-heart">18.24K</ui-stat>
   <ui-stat success label="Purchases" glyph="icon-moon-star-full">2.49K</ui-stat>
-  <ui-stat class="teal" label="Visits" glyph="icon-moon-cloud">5.04K</ui-stat>
+  <ui-stat theme="teal" label="Visits" glyph="icon-moon-cloud">5.04K</ui-stat>
+</ui-statsbar>
+```
+
+###### Icon Only Themed
+```html
+<ui-statsbar light-bg>
+  <ui-stat icon-only primary label="Users" glyph="icon-moon-user">7.11K</ui-stat>
+  <ui-stat icon-only secondary label="Downloads" glyph="icon-moon-download3">11.18K</ui-stat>
+  <ui-stat icon-only info label="Messages" glyph="icon-moon-bubbles3">9.24K</ui-stat>
+  <ui-stat icon-only danger label="Likes" glyph="icon-moon-heart">18.24K</ui-stat>
+  <ui-stat icon-only success label="Purchases" glyph="icon-moon-star-full">2.49K</ui-stat>
+  <ui-stat icon-only theme="teal" label="Visits" glyph="icon-moon-cloud">5.04K</ui-stat>
 </ui-statsbar>
 ```
 
@@ -48,6 +60,6 @@
   <ui-stat info-bg label="Messages" glyph="icon-moon-bubbles3">9.24K</ui-stat>
   <ui-stat danger-bg label="Likes" glyph="icon-moon-heart">18.24K</ui-stat>
   <ui-stat success-bg label="Purchases" glyph="icon-moon-star-full">2.49K</ui-stat>
-  <ui-stat class="teal-bg" label="Visits" glyph="icon-moon-cloud">5.04K</ui-stat>
+  <ui-stat theme-bg="teal" label="Visits" glyph="icon-moon-cloud">5.04K</ui-stat>
 </ui-statsbar>
 ```

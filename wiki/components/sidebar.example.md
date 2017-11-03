@@ -40,7 +40,7 @@
   <ui-content padded scroll>
     <compose view="../home/lipsum-big.html"></compose>
   </ui-content>
-  <ui-sidebar mini-display small collapsed="true" label="Sidebar" scroll position="end">
+  <ui-sidebar compact label="Sidebar" scroll position="end">
     <ui-menu ref="btnMenu">
       <ui-menu-item glyph="icon-moon-pencil2"></ui-menu-item>
       <ui-menu-item glyph="icon-moon-search"></ui-menu-item>

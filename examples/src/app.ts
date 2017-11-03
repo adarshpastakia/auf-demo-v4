@@ -73,7 +73,7 @@ export class App {
       }, {
         route: 'statsbar', moduleId: './components/statsbar', title: 'Statsbar', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:statsbar'
       }, {
-        route: 'panels', moduleId: './components/panels', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:panels'
+        route: 'panels', moduleId: './components/panel', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:panels'
       }, {
         route: 'tabs', moduleId: './components/tabs', title: 'Tab Panel', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:tabs'
       }, {
@@ -87,15 +87,17 @@ export class App {
       }, {
         route: 'alerts', moduleId: './components/alerts', title: 'Alerts & Toasts', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:alerts'
       }, {
-        route: 'application', moduleId: './api/application', title: 'Application', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:application'
+        route: 'api/*path', moduleId: './api/view', title: 'API Classes', nav: false, auth: false, name: 'api'
+      }, , {
+        route: 'api:application', redirect: 'api/application', title: 'Application', nav: true, auth: false, settings: { section: 'API Classes' }, name: 'api:application'
       }, {
-        route: 'http', moduleId: './api/http', title: 'Http Client', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:http'
+        route: 'api:http', redirect: 'api/http', title: 'Http Client', nav: true, auth: false, settings: { section: 'API Classes' }, name: 'api:http'
       }, {
-        route: 'event', moduleId: './api/event', title: 'Event Manager', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:event'
+        route: 'event', redirect: 'api/event', title: 'Event Manager', nav: true, auth: false, settings: { section: 'API Classes' }, name: 'api:event'
       }, {
-        route: 'datamodel', moduleId: './api/model', title: 'Data Model', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:datamodel'
+        route: 'api:datamodel', redirect: 'api/model', title: 'Data Model', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:datamodel'
       }, {
-        route: 'datasource', moduleId: './api/datasource', title: 'Data Source', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:datasource'
+        route: 'api:datasource', redirect: 'api/datasource', title: 'Data Source', nav: true, auth: false, settings: { section: 'API Classes', disabled: true }, name: 'api:datasource'
       }
     ]);
   }

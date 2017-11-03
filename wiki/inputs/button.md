@@ -9,6 +9,7 @@ Button input
   * `split`: Create a split button. __Note__ must provide dropdown
   * `split-theme = ''`: Split button theme
   * `split-glyph = ''`: Split button glyph
+  * `disabled.bind = ''`
   * `dropdown.bind = ''`: Dropdown menu reference
   * `form.bind = ''`: Form menu reference
 
