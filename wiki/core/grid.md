@@ -11,6 +11,7 @@ Flexbox row
 
 * Attributes
   * `nowrap`
+  * `nogutter`: Remove gutter spacing
   * `reverse`: Layout children in reverse
   * Horizontal Alignment
     * `start`
@@ -30,6 +31,7 @@ Flexbox vertical row
 
 * Attributes
   * `nowrap`
+  * `nogutter`: Remove gutter spacing
   * `reverse`: Layout children in reverse
   * Vertical Alignment
     * `start`
@@ -48,8 +50,6 @@ Flexbox vertical row
 Flexbox column
 
 * Attributes
-  * `padded`
-  * `reverse`: Layout children in reverse
   * Column Alignment
     * `top`
     * `middle`

@@ -19,26 +19,32 @@
         <ui-container padded>
           <h4 class="ui-text-center">Features</h4>
           <br/>
-          <ui-row class="ui-text-start ui-pad-h" middle>
-            <ui-column size="md-6 sm-12" class="ui-row ui-row-middle">
-              <ui-column padded auto><img align="left" src="examples/images/feature-layout.svg" width="64"/></ui-column>
-              <ui-column padded fill>Layout elements for creating pages with drawers, sidebars, tabs</ui-column>
+          <ui-row class="ui-text-start ui-pad-h" middle space-around>
+            <ui-column size="md-5 sm-8">
+              <ui-row middle>
+                <ui-column padded auto><img align="left" src="examples/images/feature-layout.svg" width="64"/></ui-column>
+                <ui-column padded fill>Layout elements for creating pages with drawers, sidebars, tabs</ui-column>
+              </ui-row>
             </ui-column>
-            <ui-divider></ui-divider>
-            <ui-column size="md-6 sm-12" class="ui-row ui-row-middle">
-              <ui-column padded auto><img align="left" src="examples/images/feature-input.svg" width="64"/></ui-column>
-              <ui-column padded fill>Custom input elements for dates, phone numbers and markdown content</ui-column>
+            <ui-column size="md-5 sm-8">
+              <ui-row middle>
+                <ui-column padded auto><img align="left" src="examples/images/feature-input.svg" width="64"/></ui-column>
+                <ui-column padded fill>Custom input elements for dates, phone numbers and markdown content</ui-column>
+              </ui-row>
             </ui-column>
           </ui-row>
-          <ui-row class="ui-text-start ui-pad-h" middle>
-            <ui-column size="md-6 sm-12" class="ui-row ui-row-middle">
-              <ui-column padded auto><img align="left" src="examples/images/feature-grid.svg" width="64"/></ui-column>
-              <ui-column padded fill>Functional datagrid with sorting and resizeable column</ui-column>
+          <ui-row class="ui-text-start ui-pad-h" middle space-around>
+            <ui-column size="md-5 sm-8">
+              <ui-row middle>
+                <ui-column padded auto><img align="left" src="examples/images/feature-grid.svg" width="64"/></ui-column>
+                <ui-column padded fill>Functional datagrid with sorting and resizeable column</ui-column>
+              </ui-row>
             </ui-column>
-            <ui-divider></ui-divider>
-            <ui-column size="md-6 sm-12" class="ui-row ui-row-middle">
-              <ui-column padded auto><img align="left" src="examples/images/feature-theme.svg" width="64"/></ui-column>
-              <ui-column padded fill>Completely themeable</ui-column>
+            <ui-column size="md-5 sm-8">
+              <ui-row middle>
+                <ui-column padded auto><img align="left" src="examples/images/feature-theme.svg" width="64"/></ui-column>
+                <ui-column padded fill>Completely themeable</ui-column>
+              </ui-row>
             </ui-column>
           </ui-row>
           <br/><br/>
@@ -46,7 +52,7 @@
             <a href="#/start" class="big-button">
               <span t="home:start.title">Getting Started</span>
             </a>
-            <a href="#/example" class="big-button">
+            <a href="#/examples" class="big-button">
               <span t="home:examples.title">Examples</span>
             </a>
             <a href="https://github.com/adarshpastakia/aurelia-ui-framework/wiki" target="_blank" class="noarrow big-button">
@@ -62,8 +68,10 @@
             <h4 class="ui-text-primary">Styles &amp; Theme</h4>
           </div>
           <ui-row>
-            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Styling'">
-              <a href.bind="route.href">${route.settings.title || route.title}</a>
+            <ui-column auto repeat.for="route of router.navigation | filter:'settings.section':'Styling'">
+              <div class="ui-pad-all">
+                <a href.bind="route.href">${route.settings.title || route.title}</a>
+              </div>
             </ui-column>
           </ui-row>
 
@@ -72,8 +80,10 @@
             <h4 class="ui-text-primary">Core Components</h4>
           </div>
           <ui-row>
-            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Core'">
-              <a href.bind="route.href">${route.settings.title || route.title}</a>
+            <ui-column auto repeat.for="route of router.navigation | filter:'settings.section':'Core'">
+              <div class="ui-pad-all">
+                <a href.bind="route.href">${route.settings.title || route.title}</a>
+              </div>
             </ui-column>
           </ui-row>
 
@@ -82,8 +92,10 @@
             <h4 class="ui-text-primary">Input Elements</h4>
           </div>
           <ui-row>
-            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Inputs'">
-              <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+            <ui-column auto repeat.for="route of router.navigation | filter:'settings.section':'Inputs'">
+              <div class="ui-pad-all">
+                <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+              </div>
             </ui-column>
           </ui-row>
 
@@ -92,8 +104,10 @@
             <h4 class="ui-text-primary">Components</h4>
           </div>
           <ui-row>
-            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'Components'">
-              <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+            <ui-column auto repeat.for="route of router.navigation | filter:'settings.section':'Components'">
+              <div class="ui-pad-all">
+                <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+              </div>
             </ui-column>
           </ui-row>
 
@@ -102,8 +116,10 @@
             <h4 class="ui-text-primary">API Classes</h4>
           </div>
           <ui-row>
-            <ui-column padded auto repeat.for="route of router.navigation | filter:'settings.section':'API Classes'">
-              <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+            <ui-column auto repeat.for="route of router.navigation | filter:'settings.section':'API Classes'">
+              <div class="ui-pad-all">
+                <a href.bind="route.href" class="${route.settings.disabled?'disabled':''}">${route.settings.title || route.title}</a>
+              </div>
             </ui-column>
           </ui-row>
 

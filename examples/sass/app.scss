@@ -6,7 +6,10 @@
 @import "node_modules/aurelia-ui-framework/sass/framework";
 @import "./hljs";
 
-.x-home-page {}
+.x-sample-viewport {
+  z-index: 25;
+  @include position(fixed, 0);
+}
 
 .x-app-menu {
   .ui-drawer-close {
@@ -14,12 +17,12 @@
   }
 
   .x-app-menu-title {
-    top          : 0;
-    display      : block;
-    z-index      : 2;
-    margin-bottom: 0.5em;
-    background   : $drawer-bg;
-    box-shadow   : 0 0 2em $drawer-bg;
+    top       : 0;
+    display   : block;
+    z-index   : 2;
+    margin    : 0.5em 0;
+    background: $drawer-bg;
+    box-shadow: 0 0 2em $drawer-bg;
     @include sticky();
   }
 }

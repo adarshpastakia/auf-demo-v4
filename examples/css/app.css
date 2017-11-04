@@ -1054,8 +1054,18 @@ th {
 .ui-hidden {
   visibility: hidden !important; }
 
+.ui-float-l {
+  float: left; }
+  .ui-float-l:after, .ui-float-l:before {
+    content: ''; }
+
+.ui-float-r {
+  float: right; }
+  .ui-float-r:after, .ui-float-r:before {
+    content: ''; }
+
 .ui-border-none {
-  border: none; }
+  border: none !important; }
 
 .ui-border-all {
   border: 1px solid rgba(189, 195, 199, 0.5); }
@@ -1089,7 +1099,7 @@ th {
   border-end: 1px solid rgba(189, 195, 199, 0.5); }
 
 .ui-margin-none {
-  margin: 0; }
+  margin: 0 !important; }
 
 .ui-margin-all {
   margin: 0.5rem 1rem; }
@@ -1101,7 +1111,7 @@ th {
   margin: 0 1rem; }
 
 .ui-pad-none {
-  padding: 0; }
+  padding: 0 !important; }
 
 .ui-pad-all {
   padding: 0.5rem 1rem; }
@@ -1507,6 +1517,7 @@ strong {
   width: 100%; }
 
 .ui-row {
+  box-sizing: content-box;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1514,6 +1525,12 @@ strong {
   flex-wrap: wrap; }
   .ui-row > hr {
     flex: 1 1 100%; }
+  .ui-row.ui-gutter {
+    padding: 0.25em !important; }
+    .ui-row.ui-gutter > .ui-row {
+      margin: -0.25em !important; }
+    .ui-row.ui-gutter > .ui-column {
+      padding: 0.25em; }
 
 .ui-row-vertical {
   display: flex;
@@ -1555,12 +1572,12 @@ strong {
 .ui-row-spaced {
   justify-content: space-between; }
 
+.ui-row-space-around {
+  justify-content: space-around; }
+
 [class*=" ui-col-"],
 [class^="ui-col-"] {
   flex-basis: 100%; }
-
-.ui-col {
-  flex: 0 0 auto; }
 
 .ui-col-auto {
   flex: 0 0 auto; }
@@ -1882,7 +1899,6 @@ strong {
   justify-content: flex-start;
   flex-wrap: nowrap; }
   .ui-viewport .ui-router-view {
-    z-index: 0;
     overflow: hidden;
     position: relative;
     flex: 1 1 1em;
@@ -2832,7 +2848,7 @@ strong {
   right: 0;
   font-size: 0.9rem;
   padding: 0.25em 3em;
-  z-index: 100;
+  z-index: 10;
   background: #ecf0f1;
   font-weight: 400;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
@@ -3198,13 +3214,24 @@ strong {
       -o-border-start: 1px solid rgba(189, 195, 199, 0.5);
       border-start: 1px solid rgba(189, 195, 199, 0.5); }
     .ui-statsbar .ui-stat.ui-icon-end .ui-icon {
-      order: 1; }
+      order: 1;
+      margin: 0;
+      -webkit-margin-start: 0.5em;
+      -moz-margin-start: 0.5em;
+      -ms-margin-start: 0.5em;
+      -o-margin-start: 0.5em;
+      margin-start: 0.5em; }
     .ui-statsbar .ui-stat.ui-icon-end > div {
       order: 0; }
     .ui-statsbar .ui-stat .ui-icon {
-      margin: 0 0.5rem;
       font-size: 2em;
-      text-align: center; }
+      text-align: center;
+      margin: 0;
+      -webkit-margin-end: 0.5em;
+      -moz-margin-end: 0.5em;
+      -ms-margin-end: 0.5em;
+      -o-margin-end: 0.5em;
+      margin-end: 0.5em; }
     .ui-statsbar .ui-stat .ui-stat-value {
       line-height: 1;
       font-size: 1.25em;
@@ -3217,10 +3244,18 @@ strong {
       font-weight: 600; }
   .ui-statsbar:not(.ui-vertical).ui-icon-top .ui-stat {
     flex-wrap: wrap; }
+  .ui-statsbar:not(.ui-vertical).ui-icon-top .ui-stat > .ui-icon {
+    margin: 0 0 0.5em; }
   .ui-statsbar:not(.ui-vertical).ui-icon-top .ui-stat > div {
     flex: 1 1 100%; }
   .ui-statsbar:not(.ui-vertical).ui-icon-end .ui-stat .ui-icon {
-    order: 1; }
+    order: 1;
+    margin: 0;
+    -webkit-margin-start: 0.5em;
+    -moz-margin-start: 0.5em;
+    -ms-margin-start: 0.5em;
+    -o-margin-start: 0.5em;
+    margin-start: 0.5em; }
   .ui-statsbar:not(.ui-vertical).ui-icon-end .ui-stat > div {
     order: 0; }
   .ui-statsbar.ui-vertical {
@@ -3245,8 +3280,7 @@ strong {
       .ui-statsbar.ui-vertical .ui-stat:not(:first-child) {
         border-top: 1px solid rgba(189, 195, 199, 0.5); }
       .ui-statsbar.ui-vertical .ui-stat .ui-icon {
-        margin: 0.25em 0;
-        font-size: 1.5em; }
+        margin: 0 0 0.5em; }
       .ui-statsbar.ui-vertical .ui-stat .ui-stat-value {
         font-size: 1.25em; }
       .ui-statsbar.ui-vertical .ui-stat .ui-stat-label {
@@ -4506,6 +4540,14 @@ hue-6-2: #c18401
 .hljs-link {
   text-decoration: underline; }
 
+.x-sample-viewport {
+  z-index: 25;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
 .x-app-menu .ui-drawer-close {
   display: none; }
 
@@ -4513,7 +4555,7 @@ hue-6-2: #c18401
   top: 0;
   display: block;
   z-index: 2;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
   background: #fffdf9;
   box-shadow: 0 0 2em #fffdf9;
   position: -webkit-sticky;

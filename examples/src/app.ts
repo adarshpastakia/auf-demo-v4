@@ -29,7 +29,7 @@ export class App {
       }, {
         route: 'docs', moduleId: './home/unknown', title: 'Getting Started', nav: true, auth: false, name: 'docs', settings: { section: '' }
       }, {
-        route: 'examples', moduleId: './home/unknown', title: 'Examples', nav: true, auth: false, name: 'examples', settings: { section: '' }
+        route: 'examples', moduleId: './samples/admin/view', title: 'Examples', nav: true, auth: false, name: 'examples', settings: { section: '' }
       }, {
         route: 'styles/*path', moduleId: './styles/view', title: 'Styling', nav: false, auth: false, name: 'styles'
       }, {
@@ -57,7 +57,7 @@ export class App {
       }, {
         route: 'datetime', moduleId: './inputs/datetime', title: 'Date/Time', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:datetime'
       }, {
-        route: 'options', moduleId: './inputs/options', title: 'Options & Switches', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:options'
+        route: 'options', moduleId: './inputs/options', title: 'Options & Switches', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:options'
       }, {
         route: 'content', moduleId: './inputs/content', title: 'Content Editor', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:content'
       }, {
