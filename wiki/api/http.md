@@ -1,55 +1,40 @@
-###### Injecting the HttpService
-```ts
-//MyClass.ts
+#### Basic Fetch Operations
 
-import { autoinject } from 'aurelia-framework';
-import { UIHttpService } from 'aurelia-ui-framework';
+###### Retrieval Operations
 
-@autoinject()
-export class MyClass {
-  constructor(public httpClient: UIHttpService) { }
+* `get(apiSlug, headerOptions):Promise<JSON>`
+Fetch json result
 
-  activate() {
-    // Fetch data results
-    this.httpClient.get('/logs', json => this.json = json);
-  }
+* `text(apiSlug, headerOptions):Promise<String>`
+Fetch text
 
-  addLog(event) {
-    this.httpClient.post('/logs', { timestamp: new Date().toJSON(), event });
-  }
+* `blob(apiSlug, headerOptions):Promise<BLOB>`
+Fetch BLOB
 
-  getNonApiData() {
-    this.httpClient.text('http://mydomain.com/help-text.md', md => this.helpMarkdown = md);
-  }
-}
-```
+* `json(apiSlug, headerOptions):Promise<JSON>`
+Alias for get method
 
-###### Setting the API base URL and default headers
-```ts
-// main.ts
 
-import { Aurelia } from 'aurelia-framework';
-import environment from '../environment';
+###### Change Operations
 
-export function configure(aurelia: Aurelia) {
-  aurelia.use
-    .standardConfiguration()
-    .plugin('aurelia-ui-framework', config => {
-      config
-      .apiUrl('https://app.domain.com/api')
-      .apiHeaders({ X-API-KEY: 'QWERTYSomeGiberrish=='});
-    })
-    .feature('resources');
+* `post(apiSlug, jsonBody, headerOptions):Promise<JSON>`
+POST operation
 
-  if (environment.debug) {
-    aurelia.use.developmentLogging();
-  }
+* `put(apiSlug, jsonBody, headerOptions):Promise<String>`
+PUT operation
 
-  if (environment.testing) {
-    aurelia.use.plugin('aurelia-testing');
-  }
+* `patch(apiSlug, jsonBody, headerOptions):Promise<BLOB>`
+PATCH operation
 
-  aurelia.start().then(() => aurelia.setRoot());
-}
+* `delete(apiSlug, headerOptions):Promise<JSON>`
+DELETE operation
 
-```
+###### File Operations
+
+* `upload(apiSlug, formElement, headerOptions):Promise<JSON>`
+POST file upload operation
+
+* `reupload(apiSlug, formElement, headerOptions):Promise<String>`
+PUT file upload operation
+
+> __NOTE__ File operations use FormData Browser API. For details regarding FormData [read here](https://developer.mozilla.org/en-US/docs/Web/API/FormData)

@@ -10,16 +10,6 @@ import { RouterConfiguration, Router } from "aurelia-router";
 export class ApiView {
   constructor() { }
 
-  // aurelia hooks
-  // canActivate(model) { return true; }
-  // activate(model) { return true; }
-  // bind(bindingContext) { }
-  // attached() { }
-  // detached() { }
-  // unbind() { }
-  // deactivate() { }
-  // end aurelia hooks
-
   router;
   configureRouter(config: RouterConfiguration, router: Router) {
     this.router = router;

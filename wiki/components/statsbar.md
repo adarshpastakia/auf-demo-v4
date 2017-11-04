@@ -6,7 +6,7 @@ Statsbar
   * `vertical`
   * `icon-only`: Apply text theme to icon only
   * `theme = ''`: Statsbar theme
-  * `theme-bg = ''`: Statsbar background theme
+  * `bg-theme = ''`: Statsbar background theme
 
 ---
 
@@ -18,4 +18,4 @@ Stats Card
   * `label = ''`
   * `icon-only`: Apply text theme to icon only
   * `theme = ''`: Stats card theme
-  * `theme-bg = ''`: Stats card background theme
+  * `bg-theme = ''`: Stats card background theme

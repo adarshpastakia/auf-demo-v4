@@ -5,71 +5,56 @@
 -->
 <template>
   <ui-page animate>
-    <x-container page-title="HTTP Service" view-model.ref="container">
-      <h4 class="x-title">Basic Fetch Operations</h4>
-      <div class="ui-markdown">
-        <h6 class="x-title">Retrival Operations</h6>
-        <ul>
-          <li>
-            <code>get(apiSlug, headerOptions):Promise&lt;JSON></code>
-            <p>Fetch json result</p>
-          </li>
-          <li>
-            <code>text(apiSlug, headerOptions):Promise&lt;String></code>
-            <p>Fetch text</p>
-          </li>
-          <li>
-            <code>blob(apiSlug, headerOptions):Promise&lt;BLOB></code>
-            <p>Fetch BLOB</p>
-          </li>
-          <li>
-            <code>json(apiSlug, headerOptions):Promise&lt;JSON></code>
-            <p>Alias for get method</p>
-          </li>
-        </ul>
-        <h6 class="x-title">Change Operations</h6>
-        <ul>
-          <li>
-            <code>post(apiSlug, jsonBody, headerOptions):Promise&lt;JSON></code>
-            <p>POST operation</p>
-          </li>
-          <li>
-            <code>put(apiSlug, jsonBody, headerOptions):Promise&lt;String></code>
-            <p>PUT operation</p>
-          </li>
-          <li>
-            <code>patch(apiSlug, jsonBody, headerOptions):Promise&lt;BLOB></code>
-            <p>PATCH operation</p>
-          </li>
-          <li>
-            <code>delete(apiSlug, headerOptions):Promise&lt;JSON></code>
-            <p>DELETE operation</p>
-          </li>
-        </ul>
-        <h6 class="x-title">File Operations</h6>
-        <ul>
-          <li>
-            <code>upload(apiSlug, formElement, headerOptions):Promise&lt;JSON></code>
-            <p>POST file upload operation</p>
-          </li>
-          <li>
-            <code>reupload(apiSlug, formElement, headerOptions):Promise&lt;String></code>
-            <p>PUT file upload operation</p>
-          </li>
-        </ul>
+    <x-container page-title="HTTP Service" wiki.bind="wiki" source.bind="source">
+      <h4 class="x-title">Tester</h4>
+
+      <h6 class="x-title">Authenticate</h6>
+      <div class="ui-font-big"><strong>Token:</strong> ${token}</div>
+
+
+      <h6 class="x-title">Send Request</h6>
+      <div>
+        <ui-button success icon-hilight glyph="icon-moon-checkmark" click.trigger="testAuthenticator()" busy.bind="fetching === 2">Send actual Request</ui-button>
+        <ui-button danger icon-hilight glyph="icon-moon-cancel-circle" click.trigger="testAuthenticator(true)" busy.bind="fetching === 1">Send bad Request</ui-button>
       </div>
-      <br/>
-      <div class="x-section">
-        <blockquote>
-          <strong>NOTE</strong>
-          File operations use FormData Browser API. For details regarding FormData&nbsp;
-          <a target="_blank" class="ui-small-caps" href="https://developer.mozilla.org/en-US/docs/Web/API/FormData">click here</a>.</blockquote>
+      <h6 class="x-title">Response</h6>
+      <div>
+        <p class="ui-text-success" if.bind="authPassed===true">PASS</p>
+        <p class="ui-text-danger" if.bind="authPassed===false">FAIL</p>
+        <pre>${authResponse | json}</pre>
+      </div>
+
+      <hr/>
+
+      <h5 class="x-title">Get Users</h5>
+      <h6 class="x-title">Send Request</h6>
+      <div>
+        <ui-button success icon-hilight glyph="icon-moon-checkmark" click.trigger="testUsers()" busy.bind="fetching === 4">Send actual Request</ui-button>
+        <ui-button danger icon-hilight glyph="icon-moon-cancel-circle" click.trigger="testUsers(true)" busy.bind="fetching === 3">Send unauthorized Request</ui-button>
+      </div>
+      <h6 class="x-title">Response</h6>
+      <div>
+        <p class="ui-text-success" if.bind="usersPassed===true">PASS</p>
+        <p class="ui-text-danger" if.bind="usersPassed===false">FAIL</p>
+        <pre>${usersResponse | json}</pre>
       </div>
       <hr/>
-      <h4 class="x-title">Basic Usage</h4>
-      <div class="ui-markdown x-section" ref="basicUsage">
 
+      <h5 class="x-title">Get User</h5>
+      <small>Missing query call, should fail on server and respond with 404</small>
+      <h6 class="x-title">Send Request</h6>
+      <div>
+        <ui-button success icon-hilight glyph="icon-moon-checkmark" click.trigger="testUser()" busy.bind="fetching === 7">Send actual Request</ui-button>
+        <ui-button danger icon-hilight glyph="icon-moon-cancel-circle" click.trigger="testUser(true)" busy.bind="fetching === 6">Send unauthorized Request</ui-button>
+        <ui-button info icon-hilight glyph="icon-moon-stop" click.trigger="testUser(0)" busy.bind="fetching === 5">Send bad Route</ui-button>
       </div>
+      <h6 class="x-title">Response</h6>
+      <div>
+        <p class="ui-text-success" if.bind="userPassed===true">PASS</p>
+        <p class="ui-text-danger" if.bind="userPassed===false">FAIL</p>
+        <pre>${userResponse | json}</pre>
+      </div>
+
     </x-container>
   </ui-page>
 </template>

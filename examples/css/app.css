@@ -560,11 +560,11 @@
   width: 1em;
   height: 1em;
   line-height: 1;
-  -webkit-transform-origin: 50% 50% 0;
-  -moz-transform-origin: 50% 50% 0;
-  -ms-transform-origin: 50% 50% 0;
-  -o-transform-origin: 50% 50% 0;
-  transform-origin: 50% 50% 0; }
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center; }
   [class*='ui-anim-'].ui-anim-spin,
   [class^='ui-anim-'].ui-anim-spin {
     -webkit-animation: spin 2.5s linear infinite;
@@ -625,6 +625,11 @@
       height: 1em;
       border-radius: 1em;
       border: 1px solid #F06292;
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      transform: scale(0.5);
       position: absolute;
       top: 0;
       right: 0;
@@ -643,6 +648,11 @@
       height: 1em;
       border-radius: 1em;
       border: 1px solid #AD1457;
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      transform: scale(0.5);
       position: absolute;
       top: 0;
       right: 0;
@@ -3286,148 +3296,148 @@ strong {
       .ui-statsbar.ui-vertical .ui-stat .ui-stat-label {
         font-size: 0.8em; }
 
-.ui-statsbar.ui-dark-bg {
+.ui-statsbar.ui-bg-dark {
   background: #34495e; }
-  .ui-statsbar.ui-dark-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-dark .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-dark-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-dark:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-dark-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-dark:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-dark-bg {
+.ui-statsbar .ui-stat.ui-bg-dark {
   background: #34495e; }
-  .ui-statsbar .ui-stat.ui-dark-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-dark .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-dark-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-dark:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-dark-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-dark:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-muted-bg {
+.ui-statsbar.ui-bg-muted {
   background: #95a5a6; }
-  .ui-statsbar.ui-muted-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-muted .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-muted-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-muted:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-muted-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-muted:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-muted-bg {
+.ui-statsbar .ui-stat.ui-bg-muted {
   background: #95a5a6; }
-  .ui-statsbar .ui-stat.ui-muted-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-muted .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-muted-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-muted:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-muted-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-muted:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-primary-bg {
+.ui-statsbar.ui-bg-primary {
   background: #c41762; }
-  .ui-statsbar.ui-primary-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-primary .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-primary-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-primary:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-primary-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-primary:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-primary-bg {
+.ui-statsbar .ui-stat.ui-bg-primary {
   background: #c41762; }
-  .ui-statsbar .ui-stat.ui-primary-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-primary .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-primary-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-primary:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-primary-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-primary:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-secondary-bg {
+.ui-statsbar.ui-bg-secondary {
   background: #f279a2; }
-  .ui-statsbar.ui-secondary-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-secondary .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-secondary-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-secondary:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-secondary-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-secondary:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-secondary-bg {
+.ui-statsbar .ui-stat.ui-bg-secondary {
   background: #f279a2; }
-  .ui-statsbar .ui-stat.ui-secondary-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-secondary .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-secondary-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-secondary:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-secondary-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-secondary:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-info-bg {
+.ui-statsbar.ui-bg-info {
   background: #41bef7; }
-  .ui-statsbar.ui-info-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-info .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-info-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-info:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-info-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-info:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-info-bg {
+.ui-statsbar .ui-stat.ui-bg-info {
   background: #41bef7; }
-  .ui-statsbar .ui-stat.ui-info-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-info .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-info-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-info:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-info-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-info:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-danger-bg {
+.ui-statsbar.ui-bg-danger {
   background: #f16a67; }
-  .ui-statsbar.ui-danger-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-danger .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-danger-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-danger:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-danger-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-danger:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-danger-bg {
+.ui-statsbar .ui-stat.ui-bg-danger {
   background: #f16a67; }
-  .ui-statsbar .ui-stat.ui-danger-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-danger .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-danger-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-danger:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-danger-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-danger:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-success-bg {
+.ui-statsbar.ui-bg-success {
   background: #78c37b; }
-  .ui-statsbar.ui-success-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-success .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-success-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-success:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-success-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-success:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-success-bg {
+.ui-statsbar .ui-stat.ui-bg-success {
   background: #78c37b; }
-  .ui-statsbar .ui-stat.ui-success-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-success .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-success-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-success:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-success-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-success:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar.ui-warning-bg {
+.ui-statsbar.ui-bg-warning {
   background: #ffd042; }
-  .ui-statsbar.ui-warning-bg .ui-stat .ui-icon {
+  .ui-statsbar.ui-bg-warning .ui-stat .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar.ui-warning-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar.ui-bg-warning:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar.ui-warning-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar.ui-bg-warning:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
-.ui-statsbar .ui-stat.ui-warning-bg {
+.ui-statsbar .ui-stat.ui-bg-warning {
   background: #ffd042; }
-  .ui-statsbar .ui-stat.ui-warning-bg .ui-icon {
+  .ui-statsbar .ui-stat.ui-bg-warning .ui-icon {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-warning-bg:not(.ui-icon-only) .ui-stat-value {
+  .ui-statsbar .ui-stat.ui-bg-warning:not(.ui-icon-only) .ui-stat-value {
     color: #FFFEFC; }
-  .ui-statsbar .ui-stat.ui-warning-bg:not(.ui-icon-only) .ui-stat-label {
+  .ui-statsbar .ui-stat.ui-bg-warning:not(.ui-icon-only) .ui-stat-label {
     color: rgba(255, 254, 252, 0.75); }
 
 .ui-statsbar.ui-dark {
@@ -4732,7 +4742,7 @@ h4.x-title {
 .x-viewports {
   position: relative;
   height: 15em;
-  margin: 0 1rem; }
+  margin: 0 0.5rem; }
   .x-viewports > div {
     left: 0;
     top: 0;
