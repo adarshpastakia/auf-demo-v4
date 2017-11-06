@@ -6900,6 +6900,173 @@ a.ui-menu-item {
     left: 2em;
     box-shadow: 25px 0 50px 5px rgba(127, 140, 141, 0.25); }
 
+.ui-tab-panel {
+  flex: 1 1 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden; }
+  .ui-tab-panel .ui-tabbar {
+    min-height: 2em;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    .ui-tab-panel .ui-tabbar .ui-tabbar-toggle {
+      cursor: pointer;
+      color: #AD1457;
+      align-self: stretch; }
+      .ui-tab-panel .ui-tabbar .ui-tabbar-toggle:hover {
+        box-shadow: none;
+        background: rgba(240, 98, 146, 0.5);
+        color: #FFFEFC; }
+    .ui-tab-panel .ui-tabbar > .ui-tabbar-overflow {
+      display: none; }
+      .ui-tab-panel .ui-tabbar > .ui-tabbar-overflow.ui-open {
+        display: block; }
+      .ui-tab-panel .ui-tabbar > .ui-tabbar-overflow > .ui-tab-button {
+        border: none;
+        border-radius: 0;
+        padding: 0.25em 0.5em;
+        margin: 0 !important;
+        border-bottom: 1px solid rgba(189, 195, 199, 0.25); }
+        .ui-tab-panel .ui-tabbar > .ui-tabbar-overflow > .ui-tab-button.ui-active {
+          box-shadow: -4px 0 0 0 #AD1457 inset; }
+        .ui-tab-panel .ui-tabbar > .ui-tabbar-overflow > .ui-tab-button:hover {
+          box-shadow: -4px 0 0 0 rgba(173, 20, 87, 0.5) inset; }
+    .ui-tab-panel .ui-tabbar > .ui-tabbar-links {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: nowrap; }
+    .ui-tab-panel .ui-tabbar > .ui-tabbar-buttons {
+      position: relative;
+      flex: 1 1 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-wrap: nowrap; }
+    .ui-tab-panel .ui-tabbar .ui-tab-button {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      position: relative;
+      z-index: 2;
+      line-height: 2;
+      padding: 0 0.5em;
+      min-width: 6em;
+      margin: 4px 2px 0;
+      border: 1px solid rgba(189, 195, 199, 0.5);
+      border-bottom-width: 0;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px; }
+      .ui-tab-panel .ui-tabbar .ui-tab-button > div {
+        flex: 1 1 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; }
+        .ui-tab-panel .ui-tabbar .ui-tab-button > div .ui-tab-icon ~ .ui-label {
+          padding: 0 0.5em;
+          pointer-events: none; }
+        .ui-tab-panel .ui-tabbar .ui-tab-button > div .ui-label {
+          cursor: default;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          max-width: 8em;
+          pointer-events: none; }
+      .ui-tab-panel .ui-tabbar .ui-tab-button.ui-disabled {
+        pointer-events: none;
+        color: #95a5a6;
+        opacity: 0.5; }
+      .ui-tab-panel .ui-tabbar .ui-tab-button:after {
+        display: block;
+        content: '';
+        bottom: 0;
+        z-index: 5;
+        left: -1px;
+        right: -1px;
+        position: absolute;
+        height: 0;
+        margin: 0 auto;
+        background: #AD1457;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s; }
+      .ui-tab-panel .ui-tabbar .ui-tab-button:hover {
+        margin-top: 2px; }
+        .ui-tab-panel .ui-tabbar .ui-tab-button:hover:after {
+          height: 2px; }
+      .ui-tab-panel .ui-tabbar .ui-tab-button.ui-active {
+        margin-top: 0;
+        margin-bottom: -1px;
+        font-weight: 600;
+        color: #AD1457;
+        background: #FFFEFC; }
+        .ui-tab-panel .ui-tabbar .ui-tab-button.ui-active:after {
+          height: 4px; }
+      .ui-tab-panel .ui-tabbar .ui-tab-button .ui-close {
+        opacity: 0.7; }
+        .ui-tab-panel .ui-tabbar .ui-tab-button .ui-close:hover {
+          opacity: 1; }
+  .ui-tab-panel .ui-tab {
+    flex: 1 1 1em;
+    border: 1px solid rgba(189, 195, 199, 0.5); }
+    .ui-tab-panel .ui-tab.ui-flexed {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      .ui-tab-panel .ui-tab.ui-flexed > compose {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex: 1 1 1em; }
+    .ui-tab-panel .ui-tab:not(.ui-active) {
+      display: none; }
+    .ui-tab-panel .ui-tab:not(.ui-scroll) {
+      overflow: hidden; }
+  .ui-tab-panel.ui-noborder .ui-tab {
+    border: none; }
+  .ui-tab-panel.ui-noborder:not(.ui-bottom) .ui-tab-bar {
+    border-bottom: 1px solid rgba(189, 195, 199, 0.5); }
+  .ui-tab-panel.ui-noborder.ui-bottom .ui-tab-bar {
+    border-top: 1px solid rgba(189, 195, 199, 0.5); }
+  .ui-tab-panel.ui-bottom {
+    flex-direction: column-reverse; }
+    .ui-tab-panel.ui-bottom .ui-tabbar .ui-tab-button {
+      margin: 0 2px 4px;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      border-radius: 0;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px; }
+      .ui-tab-panel.ui-bottom .ui-tabbar .ui-tab-button:after {
+        bottom: auto;
+        top: 0; }
+      .ui-tab-panel.ui-bottom .ui-tabbar .ui-tab-button:hover {
+        margin-bottom: 2px; }
+      .ui-tab-panel.ui-bottom .ui-tabbar .ui-tab-button.ui-active {
+        margin-top: -1px;
+        margin-bottom: 0; }
+
 /*
 
 Atom One Light by Daniel Gamage
@@ -7119,7 +7286,7 @@ hue-6-2: #c18401
   -o-transition: transform 0.5s;
   transition: transform 0.5s; }
 
-.ui-drawer.show ~ .ui-viewport {
+.ui-drawer.ui-show ~ .ui-viewport {
   -webkit-transform: translateX(20em);
   -moz-transform: translateX(20em);
   -ms-transform: translateX(20em);

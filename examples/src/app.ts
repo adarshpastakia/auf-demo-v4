@@ -75,13 +75,13 @@ export class App {
       }, {
         route: 'panels', moduleId: './components/panel', title: 'Panel/Cards', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:panels'
       }, {
-        route: 'tabs', moduleId: './components/tabs', title: 'Tab Panel', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:tabs'
+        route: 'tabs', moduleId: './components/tabpanel', title: 'Tab Panel', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:tabs'
       }, {
         route: 'tree', moduleId: './components/tree', title: 'Tree Panel', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:tree'
       }, {
         route: 'datagrid', moduleId: './components/datagrid', title: 'Datagrid', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:datagrid'
       }, {
-        route: 'indicators', moduleId: './components/indicators', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components', disabled: false }, name: 'comps:indicators'
+        route: 'indicators', moduleId: './components/indicators', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:indicators'
       }, {
         route: 'dialogs', moduleId: './components/dialogs', title: 'Dialogs', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:dialogs'
       }, {
