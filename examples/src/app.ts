@@ -81,7 +81,7 @@ export class App {
       }, {
         route: 'datagrid', moduleId: './components/datagrid', title: 'Datagrid', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:datagrid'
       }, {
-        route: 'breadcrumbs', moduleId: './components/breadcrumbs', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:breadcrumbs'
+        route: 'indicators', moduleId: './components/indicators', title: 'Breadcrumbs & Chips', nav: true, auth: false, settings: { section: 'Components', disabled: false }, name: 'comps:indicators'
       }, {
         route: 'dialogs', moduleId: './components/dialogs', title: 'Dialogs', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:dialogs'
       }, {
