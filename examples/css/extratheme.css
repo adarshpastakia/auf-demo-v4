@@ -20,7 +20,7 @@
 .ui-toolbar.ui-red {
   background: rgba(255, 59, 48, 0.25); }
   .ui-toolbar.ui-red .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(255, 59, 48, 0.8); }
     .ui-toolbar.ui-red .ui-dropdown .ui-caret,
     .ui-toolbar.ui-red .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -439,7 +439,7 @@
 .ui-toolbar.ui-pink {
   background: rgba(233, 30, 99, 0.25); }
   .ui-toolbar.ui-pink .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(233, 30, 99, 0.8); }
     .ui-toolbar.ui-pink .ui-dropdown .ui-caret,
     .ui-toolbar.ui-pink .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -858,7 +858,7 @@
 .ui-toolbar.ui-violet {
   background: rgba(156, 39, 176, 0.25); }
   .ui-toolbar.ui-violet .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(156, 39, 176, 0.8); }
     .ui-toolbar.ui-violet .ui-dropdown .ui-caret,
     .ui-toolbar.ui-violet .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -1277,7 +1277,7 @@
 .ui-toolbar.ui-purple {
   background: rgba(103, 58, 183, 0.25); }
   .ui-toolbar.ui-purple .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(103, 58, 183, 0.8); }
     .ui-toolbar.ui-purple .ui-dropdown .ui-caret,
     .ui-toolbar.ui-purple .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -1696,7 +1696,7 @@
 .ui-toolbar.ui-indigo {
   background: rgba(63, 81, 181, 0.25); }
   .ui-toolbar.ui-indigo .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(63, 81, 181, 0.8); }
     .ui-toolbar.ui-indigo .ui-dropdown .ui-caret,
     .ui-toolbar.ui-indigo .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -2115,7 +2115,7 @@
 .ui-toolbar.ui-blue {
   background: rgba(33, 150, 243, 0.25); }
   .ui-toolbar.ui-blue .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(33, 150, 243, 0.8); }
     .ui-toolbar.ui-blue .ui-dropdown .ui-caret,
     .ui-toolbar.ui-blue .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -2534,7 +2534,7 @@
 .ui-toolbar.ui-cyan {
   background: rgba(0, 188, 212, 0.25); }
   .ui-toolbar.ui-cyan .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(0, 188, 212, 0.8); }
     .ui-toolbar.ui-cyan .ui-dropdown .ui-caret,
     .ui-toolbar.ui-cyan .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -2953,7 +2953,7 @@
 .ui-toolbar.ui-teal {
   background: rgba(0, 150, 136, 0.25); }
   .ui-toolbar.ui-teal .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(0, 150, 136, 0.8); }
     .ui-toolbar.ui-teal .ui-dropdown .ui-caret,
     .ui-toolbar.ui-teal .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -3372,7 +3372,7 @@
 .ui-toolbar.ui-green {
   background: rgba(76, 175, 80, 0.25); }
   .ui-toolbar.ui-green .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(76, 175, 80, 0.8); }
     .ui-toolbar.ui-green .ui-dropdown .ui-caret,
     .ui-toolbar.ui-green .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -3791,7 +3791,7 @@
 .ui-toolbar.ui-lime {
   background: rgba(205, 220, 57, 0.25); }
   .ui-toolbar.ui-lime .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(205, 220, 57, 0.8); }
     .ui-toolbar.ui-lime .ui-dropdown .ui-caret,
     .ui-toolbar.ui-lime .ui-dropdown .ui-label {
       color: #34495e; }
@@ -4210,7 +4210,7 @@
 .ui-toolbar.ui-yellow {
   background: rgba(255, 235, 59, 0.25); }
   .ui-toolbar.ui-yellow .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(255, 235, 59, 0.8); }
     .ui-toolbar.ui-yellow .ui-dropdown .ui-caret,
     .ui-toolbar.ui-yellow .ui-dropdown .ui-label {
       color: #34495e; }
@@ -4629,7 +4629,7 @@
 .ui-toolbar.ui-amber {
   background: rgba(255, 193, 7, 0.25); }
   .ui-toolbar.ui-amber .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(255, 193, 7, 0.8); }
     .ui-toolbar.ui-amber .ui-dropdown .ui-caret,
     .ui-toolbar.ui-amber .ui-dropdown .ui-label {
       color: #34495e; }
@@ -5048,7 +5048,7 @@
 .ui-toolbar.ui-orange {
   background: rgba(255, 87, 34, 0.25); }
   .ui-toolbar.ui-orange .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(255, 87, 34, 0.8); }
     .ui-toolbar.ui-orange .ui-dropdown .ui-caret,
     .ui-toolbar.ui-orange .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -5467,7 +5467,7 @@
 .ui-toolbar.ui-brown {
   background: rgba(121, 85, 72, 0.25); }
   .ui-toolbar.ui-brown .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(121, 85, 72, 0.8); }
     .ui-toolbar.ui-brown .ui-dropdown .ui-caret,
     .ui-toolbar.ui-brown .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -5886,7 +5886,7 @@
 .ui-toolbar.ui-lightGray {
   background: rgba(189, 195, 199, 0.25); }
   .ui-toolbar.ui-lightGray .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(189, 195, 199, 0.8); }
     .ui-toolbar.ui-lightGray .ui-dropdown .ui-caret,
     .ui-toolbar.ui-lightGray .ui-dropdown .ui-label {
       color: #ecf0f1; }
@@ -6305,7 +6305,7 @@
 .ui-toolbar.ui-darkGray {
   background: rgba(127, 140, 141, 0.25); }
   .ui-toolbar.ui-darkGray .ui-dropdown {
-    background: rgba(255, 254, 252, 0.1); }
+    background: rgba(127, 140, 141, 0.8); }
     .ui-toolbar.ui-darkGray .ui-dropdown .ui-caret,
     .ui-toolbar.ui-darkGray .ui-dropdown .ui-label {
       color: #ecf0f1; }

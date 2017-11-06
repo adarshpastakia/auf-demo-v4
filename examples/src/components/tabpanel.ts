@@ -5,21 +5,16 @@
 // @license     : MIT
 
 import { autoinject } from 'aurelia-framework';
-import { UIConstants, UIHttpService } from 'aurelia-ui-framework';
+import { UIHttpService } from 'aurelia-ui-framework';
 
 @autoinject()
-export class Indicators {
+export class TabPanel {
   constructor(public httpClient: UIHttpService) { }
-
-  themes = UIConstants['themes'].split(',');
-  colors = UIConstants['colors'].split(',');
-
-  crumbs = ['Personal Info', 'Shipping Info', 'Payment Info', 'Agreement'];
 
   wiki = '';
   source = '';
   activate() {
-    // this.httpClient.text('wiki/components/drawer.md').then(md => this.wiki = md);
-    // this.httpClient.text('wiki/components/drawer.example.md').then(md => this.source = md);
+    this.httpClient.text('wiki/components/tabpanel.md').then(md => this.wiki = md);
+    this.httpClient.text('wiki/components/tabpanel.example.md').then(md => this.source = md);
   }
 }

@@ -14,6 +14,7 @@ export class Container {
   @bindable() wiki = '';
   @bindable() needRtl = false;
 
+  dir = "ltr";
   currentView = 0;
 
   elSource: any = {};

@@ -101,9 +101,9 @@
           <h6 class="x-title">Inline Menu</h6>
           <ui-menu class="ui-border-all ui-border-light ui-inline">
             <ui-menu-section>Actions</ui-menu-section>
-            <ui-menu-item active.bind="mnactive==1" click.trigger="mnactive=1" glyph="icon-moon-pencil2">Edit</ui-menu-item>
-            <ui-menu-item active.bind="mnactive==2" click.trigger="mnactive=2" glyph="icon-moon-search">Search</ui-menu-item>
-            <ui-menu-item active.bind="mnactive==3" click.trigger="mnactive=3" glyph="icon-moon-bin">Delete</ui-menu-item>
+            <ui-menu-item active.bind="mnactive==1" click.trigger="mnactive=1" glyph="icon-moon-pencil2" description="Edit user profile">Edit</ui-menu-item>
+            <ui-menu-item active.bind="mnactive==2" click.trigger="mnactive=2" glyph="icon-moon-search" description="Search user by username/email">Search</ui-menu-item>
+            <ui-menu-item active.bind="mnactive==3" click.trigger="mnactive=3" glyph="icon-moon-bin" description="Delete user profile">Delete</ui-menu-item>
             <ui-menu-section>Options</ui-menu-section>
             <ui-menu-item active.bind="!mnactive" click.trigger="mnactive=0" glyph="icon-moon-bubbles4" badge-dark="9">Notifications</ui-menu-item>
             <ui-menu-item active.bind="mnactive==4" click.trigger="mnactive=4" glyph="icon-moon-cog">Settings</ui-menu-item>

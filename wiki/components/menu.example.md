@@ -82,11 +82,22 @@
 ```html
 <ui-menu class="ui-border-all ui-border-light ui-inline">
   <ui-menu-section>Actions</ui-menu-section>
-  <ui-menu-item glyph="icon-moon-pencil2">Edit</ui-menu-item>
-  <ui-menu-item glyph="icon-moon-search">Search</ui-menu-item>
-  <ui-menu-item glyph="icon-moon-bin">Delete</ui-menu-item>
+  <ui-menu-item glyph="icon-moon-pencil2" description="Lorem ipsum...">Edit</ui-menu-item>
+  <ui-menu-item glyph="icon-moon-search" description="Lorem ipsum...">Search</ui-menu-item>
+  <ui-menu-item glyph="icon-moon-bin" description="Lorem ipsum...">Delete</ui-menu-item>
   <ui-menu-section>Options</ui-menu-section>
   <ui-menu-item glyph="icon-moon-bubbles4">Notifications</ui-menu-item>
   <ui-menu-item glyph="icon-moon-cog">Settings</ui-menu-item>
 </ui-menu>
+```
+
+
+###### Dropdowns
+
+```html
+<ui-dropdown width="10em" glyph="glyph-icon-email" value="1">
+  <ui-list-item value="1">Mobile</ui-list-item>
+  <ui-list-item value="2">Work</ui-list-item>
+  <ui-list-item value="3">Home</ui-list-item>
+</ui-dropdown>
 ```
