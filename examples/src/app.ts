@@ -51,7 +51,7 @@ export class App {
       }, {
         route: 'buttons', moduleId: './inputs/buttons', title: 'Buttons', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:buttons'
       }, {
-        route: 'text', moduleId: './inputs/text', title: 'Textual Inputs', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:text'
+        route: 'text', moduleId: './inputs/inputs', title: 'Textual Inputs', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:text'
       }, {
         route: 'lists', moduleId: './inputs/lists', title: 'Lists & Selects', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:lists'
       }, {
@@ -85,7 +85,7 @@ export class App {
       }, {
         route: 'dialogs', moduleId: './components/dialogs', title: 'Dialogs', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:dialogs'
       }, {
-        route: 'alerts', moduleId: './components/alerts', title: 'Alerts & Toasts', nav: true, auth: false, settings: { section: 'Components', disabled: true }, name: 'comps:alerts'
+        route: 'alerts', moduleId: './components/alerts', title: 'Alerts & Toasts', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:alerts'
       }, {
         route: 'api/*path', moduleId: './api/view', title: 'API Classes', nav: false, auth: false, name: 'api'
       }, , {
