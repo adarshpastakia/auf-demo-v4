@@ -126,7 +126,7 @@
   }
 }
 
-.ui-app-title {
+.ui-viewport-title {
   @include transition(transform .2s .2s);
 
   &.x-hide {
@@ -135,7 +135,8 @@
   }
 }
 
-.ui-drawer {
+.x-app-menu.ui-drawer {
+  position: fixed;
   > .ui-drawer-content {
     box-shadow: none !important;
   }
@@ -144,7 +145,7 @@
     @include transition(transform .5s);
   }
 
-  &.ui-show ~ .ui-viewport {
+  &.ui-drawer-show ~ .ui-viewport {
     @include transform(translateX($drawer-width));
   }
 }

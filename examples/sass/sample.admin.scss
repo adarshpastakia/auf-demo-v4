@@ -19,7 +19,8 @@
   }
 
   .x-dash-card {
-    border: none;
+    border : none;
+    display: block;
 
     &.bgLighter {
       background: $light;
@@ -79,7 +80,7 @@
   }
 
   .x-app-header {
-    height     : 4em;
+    height: 4em;
   }
 
   .x-app-header {
