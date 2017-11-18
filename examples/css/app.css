@@ -1002,9 +1002,16 @@ a {
   a:hover {
     color: #AD1457; }
   a.ui-external:after {
-    content: '\2B00';
-    font-size: 0.8em;
-    vertical-align: super; }
+    content: '\21F1';
+    font-size: 0.7em;
+    color: #95a5a6;
+    display: inline-block;
+    vertical-align: super;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1); }
   a.disabled, a[disabled] {
     color: #bdc3c7;
     pointer-events: none; }
@@ -1320,18 +1327,15 @@ p {
 
 p.ui-para.ui-emphasis:first-letter {
   font-size: 1.5em;
-  line-height: 1;
-  color: #F06292; }
+  line-height: 1; }
 
 p.ui-para.ui-emphasis-big:first-letter {
   font-size: 2.5em;
-  line-height: 1;
-  color: #F06292; }
+  line-height: 1; }
 
 p.ui-para.ui-emphasis-large:first-letter {
   font-size: 4em;
-  line-height: 1;
-  color: #F06292; }
+  line-height: 1; }
 
 .ui-display-1 {
   font-size: 4em;
@@ -2513,6 +2517,7 @@ strong {
     position: relative;
     font-variant: small-caps;
     background: #FFFEFC;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) inset;
     font-weight: 400; }
   .ui-button-group.ui-fill > .ui-button {
     -webkit-flex: 1 1 auto;
@@ -3242,11 +3247,11 @@ strong {
       font-size: 1.1em; }
   .ui-input-group > div {
     line-height: 2.2;
-    -webkit-flex: 1 1 8em;
-    -moz-flex: 1 1 8em;
-    -ms-flex: 1 1 8em;
-    -o-flex: 1 1 8em;
-    flex: 1 1 8em; }
+    -webkit-flex: 1 0 1em;
+    -moz-flex: 1 0 1em;
+    -ms-flex: 1 0 1em;
+    -o-flex: 1 0 1em;
+    flex: 1 0 1em; }
   .ui-input-group .ui-group-wrapper {
     background: white;
     color: #2c3e50;
@@ -3282,11 +3287,11 @@ strong {
     box-shadow: none; }
 
 .ui-input-wrapper {
-  -webkit-flex: 1 1 4em;
-  -moz-flex: 1 1 4em;
-  -ms-flex: 1 1 4em;
-  -o-flex: 1 1 4em;
-  flex: 1 1 4em; }
+  -webkit-flex: 1 0 4em;
+  -moz-flex: 1 0 4em;
+  -ms-flex: 1 0 4em;
+  -o-flex: 1 0 4em;
+  flex: 1 0 4em; }
   .ui-input-wrapper .ui-input-info {
     background: rgba(236, 240, 241, 0.25);
     color: #95a5a6;
@@ -4360,6 +4365,7 @@ strong {
   font-size: 0.9rem;
   padding: 0.25em 3em;
   z-index: 10;
+  color: #34495e;
   background: #ecf0f1;
   font-weight: 400;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
@@ -4368,6 +4374,8 @@ strong {
   -ms-transform: rotate(45deg) translate(30%, -50%);
   -o-transform: rotate(45deg) translate(30%, -50%);
   transform: rotate(45deg) translate(30%, -50%); }
+  .ui-ribbon.ui-small {
+    font-size: 0.5em; }
 
 .ui-ribbon.ui-primary {
   color: #FFFEFC;
@@ -5516,7 +5524,8 @@ strong {
   position: relative;
   display: inline-block;
   line-height: 1;
-  margin: 0.25rem; }
+  margin: 0.25rem;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2); }
   .ui-dropdown:not(.ui-invalid) .ui-invalid-icon {
     display: none; }
   .ui-dropdown .ui-invalid-icon {
@@ -8903,21 +8912,69 @@ a.ui-menu-item {
   -ms-justify-content: flex-start;
   -o-justify-content: flex-start;
   justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   overflow: hidden; }
   .ui-tab-panel .ui-tab-panel-body {
+    border: 1px solid rgba(189, 195, 199, 0.5);
+    position: relative;
+    overflow: hidden;
     -webkit-flex: 1 1 1em;
     -moz-flex: 1 1 1em;
     -ms-flex: 1 1 1em;
     -o-flex: 1 1 1em;
     flex: 1 1 1em;
-    border: 1px solid rgba(189, 195, 199, 0.5);
-    position: relative;
-    overflow: hidden; }
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    -o-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .ui-tab-panel .ui-tab-panel-body > compose {
+      -webkit-flex: 1 1 1em;
+      -moz-flex: 1 1 1em;
+      -ms-flex: 1 1 1em;
+      -o-flex: 1 1 1em;
+      flex: 1 1 1em;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: stretch;
+      -moz-align-items: stretch;
+      -ms-align-items: stretch;
+      -o-align-items: stretch;
+      align-items: stretch;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      -o-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-flex-wrap: nowrap;
+      -moz-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      -o-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
   .ui-tab-panel .ui-tabbar {
     min-height: 2em;
     -webkit-flex: 0 0 auto;
@@ -8941,11 +8998,11 @@ a.ui-menu-item {
     -ms-justify-content: flex-start;
     -o-justify-content: flex-start;
     justify-content: flex-start;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
     .ui-tab-panel .ui-tabbar .ui-tabbar-toggle {
       cursor: pointer;
       color: #AD1457;
@@ -9475,6 +9532,40 @@ hue-6-2: #c18401
 
 h4.x-title {
   color: #F06292; }
+
+.x-title-alt {
+  color: #AD1457;
+  margin: 1em 0 0.5em; }
+  .x-title-alt > span {
+    border-bottom: 1px solid rgba(149, 165, 166, 0.2); }
+
+.x-started-read {
+  font-size: 1.25em; }
+  .x-started-read p {
+    line-height: 2; }
+
+.x-started-guide pre > code {
+  background: #34495e;
+  color: #FFFEFC; }
+
+.x-started-guide ol > li {
+  margin: 2em 0 0.5em; }
+
+ul.x-checklist {
+  margin: 0;
+  padding-left: 2em;
+  list-style: none;
+  line-height: 1.5; }
+  ul.x-checklist li:before {
+    color: #7f8c8d;
+    content: '\2713';
+    position: absolute;
+    margin-left: -1.5em;
+    font-size: 0.8em;
+    margin-top: 0.5em; }
+  ul.x-checklist .x-explain {
+    font-size: 0.8em;
+    color: #7f8c8d; }
 
 .x-tab {
   padding: 6px 12px;
