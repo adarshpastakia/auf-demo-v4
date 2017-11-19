@@ -57,7 +57,7 @@ export class App {
       }, {
         route: 'text', moduleId: './inputs/inputs', title: 'Textual Inputs', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:text'
       }, {
-        route: 'lists', moduleId: './inputs/lists', title: 'Lists & Selects', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:lists'
+        route: 'lists', moduleId: './inputs/lists', title: 'List Inputs', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:lists'
       }, {
         route: 'datetime', moduleId: './inputs/dates', title: 'Date/Time', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:datetime'
       }, {
@@ -65,7 +65,7 @@ export class App {
       }, {
         route: 'content', moduleId: './inputs/content', title: 'Content Editor', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:content'
       }, {
-        route: 'validation', moduleId: './inputs/validation', title: 'Validations', nav: true, auth: false, settings: { section: 'Inputs', disabled: true }, name: 'inputs:validation'
+        route: 'validation', moduleId: './inputs/validation', title: 'Validations', nav: true, auth: false, settings: { section: 'Inputs' }, name: 'inputs:validation'
       }, {
         route: 'drawer', moduleId: './components/drawer', title: 'Drawer', nav: true, auth: false, settings: { section: 'Components' }, name: 'comps:buttons'
       }, {
